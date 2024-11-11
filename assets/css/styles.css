@@ -150,12 +150,17 @@ section.header-bottom {
   height: 50px;
   background-color: black;
 }
+
+.header-bottom nav {
+  width: 100%;
+}
+
 .header-bottom nav ul {
   display: flex;
   list-style: none; /* Sin viñetas */
   padding: 0; /* Sin padding */
   margin: 0; /* Sin margen */
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   gap: 3px;
 }
@@ -163,15 +168,11 @@ section.header-bottom {
 .header-bottom nav ul li button {
   color: rgb(255, 255, 255);
   background-color: black;
+  padding: 8px 8px;
 }
 
 .header-bottom nav ul li button:hover {
   background-color: #563c5b;
-}
-
-.header-bottom nav ul li button{
-  padding: 8px 8px;
-
 }
 
 /* SLIDER */
@@ -243,10 +244,21 @@ input:checked + .slider:before {
 }
 
 /* MAIN */
-
+main {
+  height: 1000px
+}
 .espacio {
     height: 1000px; /* Ajusta la altura del espacio según sea necesario */
     background-color: white; /* Puede ser transparente o del color que desees */
+}
+
+section.categories {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  grid-template-rows: auto auto; /* 2 filas */
+  gap: 0; /* Espacio entre los elementos */
+  padding: 15px;
+  background-color: rgb(30, 30, 30);
 }
 
 /* Estilos para el footer */
@@ -258,24 +270,62 @@ footer {
 
 
 /* Primera sección */
-.first-section {
-  height: 200px;
+.newsletter-section {
+  height: auto;
   display: flex;
   justify-content: space-between; /* Espacio entre elementos */
+  align-items: flex-start;
+  padding: 10px;
+}
+.newsletter-section article {
+  gap: 10px;
+  flex-grow: 1;
 }
 
-.left {
+article.right {
+  display: flex;
+  align-items: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 5px;
+}
+
+article.left {
   flex: 1; /* Ocupa un tercio del total */
   display: flex;
-  align-items: center; /* Centra verticalmente */
+  align-items: flex-start; /* Centra verticalmente */
+  justify-items: flex-start;
 }
 
-.footer-image {
-  max-width: 100px; /* Limita el tamaño de la imagen */
+article.left img {
+  width: 12vw;
+}
+
+article.left {
+  display: flex;
+  align-items: center;
+}
+
+.newsletter-register {
+  display: flex;
+  width: auto;
+  max-height: 5vh;
+  gap: 10px;
+}
+
+.newsletter-register button {
+  height: 100%;
+  background-color: rgb(30, 30, 30);
+}
+
+.newsletter-register input {
+  height: 100%;
+  width: 250px;
 }
 
 .text-content {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   margin-left: 20px; /* Espacio entre la imagen y el texto */
 }
@@ -284,6 +334,7 @@ footer {
   flex: 2; /* Ocupa dos tercios del total */
   display: flex;
   flex-direction: column; /* Coloca el input y el texto en columna */
+  align-items: flex-start;
 }
 
 input[type="text"] {
@@ -310,14 +361,20 @@ button:hover {
 .payment-section {
   display: flex;
   justify-content: space-between;
-  align-items: center; /* Centra los elementos horizontalmente */
-  background-color: #d6d6d6
+  align-items: flex-start; /* Centra los elementos horizontalmente */
+  background-color: #d6d6d6;
+  padding: 15px;
 }
 
-.payment-images {
-  display: flex; /* Alinea las imágenes en fila */
-  justify-content: center; /* Centra las imágenes */
+article.payment-images {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.payment-images img{
   margin-bottom: 10px; /* Espacio debajo de las imágenes */
+  height: 27px;
 }
 
 .payment-icon {
@@ -330,13 +387,13 @@ button:hover {
   margin: 10px; /* Espacio alrededor de las listas */
 }
 
-.list-section ul {
-  list-style-type: none; /* Quita los puntos de las listas */
-  padding: 0; /* Quita el padding */
+article.list-section-center {
+  width: 30%;
+  margin-left: 150px;
 }
 
-.list-section li {
-  margin: 5px 0; /* Espacio entre los elementos de la lista */
+article.list-section-right {
+  width: 30%;
 }
 
 /* Tercera sección */

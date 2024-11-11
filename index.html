@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
     <!-- Título de la página -->
-    <title>Nombre que aún no he pensado</title>
+    <title>Pitch Perfect</title>
 
     <!-- Fuentes accesibles -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> <!-- Fuentes de Google para mejorar la legibilidad -->
@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     
     <!-- Icono de la página (favicon) PENDIENTE --> 
-    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Icono que aparece en la pestaña del navegador -->
+    <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon"> <!-- Icono que aparece en la pestaña del navegador -->
 
     <!-- Accesibilidad -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Librería de iconos accesibles -->
@@ -29,7 +29,7 @@
     <!-- Prevenir la escala de la página cuando se usa en dispositivos móviles -->
     <meta name="robots" content="index, follow"> <!-- Permite a los motores de búsqueda indexar el sitio -->
 </head>
-<main>
+<body>
     <header>
         <section class="header-top">
             <nav class="left">
@@ -55,7 +55,7 @@
                     <label class="switch">
                         <input type="checkbox">
                         <span class="slider round"></span>
-                      </label>
+                    </label>
                     <li><button class="language"><i class="fas fa-globe"></i></button></li>
                 </ul>
                 <ul class="bottom">
@@ -83,17 +83,48 @@
             </nav>
         </section>
     </header>
-    <body>
-        <section class="espacio"></section>
-    </body>
+    <main>
+        <!-- <section class="espacio"></section> -->
+        <section class="image-slider">
+            <img src="imagen.jpg" alt="Imagen descriptiva" class="">
+            <img src="imagen.jpg" alt="Imagen descriptiva" class="">
+            <img src="imagen.jpg" alt="Imagen descriptiva" class="">
+        </section>
+        <section class="categories">
+            <article>Guiarras y bajos</article>
+                <img src="imagen.jpg" alt="Imagen descriptiva" class="">
+            <article>Baterias</article>
+                <img src="imagen.jpg" alt="Imagen descriptiva" class="">
+            <article>Teclados</article>
+                <img src="imagen.jpg" alt="Imagen descriptiva" class="">
+            <article>Estudio</article>
+                <img src="imagen.jpg" alt="Imagen descriptiva" class="">
+            <article>Software</article>
+                <img src="imagen.jpg" alt="Imagen descriptiva" class="">
+            <article>Viento</article>
+                <img src="imagen.jpg" alt="Imagen descriptiva" class="">
+            <article>Micros</article>
+                <img src="imagen.jpg" alt="Imagen descriptiva" class="">
+            <article>Tradicional</article>
+                <img src="imagen.jpg" alt="Imagen descriptiva" class="">
+            <article>Accesorios</article>
+                <img src="imagen.jpg" alt="Imagen descriptiva" class="">
+        </section>
+        <section>
+
+        </section>
+        <section>
+
+        </section>
+    </main>
     <footer>
         <!-- Primera sección -->
-        <section class="first-section">
+        <section class="newsletter-section">
             <article class="left">
-                <img src="imagen.jpg" alt="Imagen descriptiva" class="footer-image">
+                <img src="assets/images/newsletter.png" alt="Imagen descriptiva" class="footer-image">
                 <article class="text-content">
-                    <h3>Título de la Sección</h3>
-                    <h4>Subtítulo de la Sección</h4>
+                    <h3>Newsletter</h3>
+                    <h4>Descripción de la Newsletter</h4>
                     <ul>
                         <li>Elemento 1</li>
                         <li>Elemento 2</li>
@@ -102,30 +133,32 @@
                 </article>
             </article>
             <article class="right">
-                <input type="text" placeholder="Regístrate">
-                <button>Regístrate</button>
+                <article class="newsletter-register">
+                    <input type="text" placeholder="Dirección de e-mail">
+                    <button>Regístrate</button>
+                </article>
                 <p>Texto informativo sobre el registro.</p>
             </article>
         </section>
-    
+
         <!-- Segunda sección -->
         <section class="payment-section">
             <section>
                 <article class="payment-images">
-                    <img src="paypal.png" alt="PayPal">
-                    <img src="visa.png" alt="Visa">
-                    <img src="mastercard.png" alt="Mastercard">
+                    <img src="assets/images/paypal-logo.png" alt="PayPal">
+                    <img src="assets/images/visa-logo.png" alt="Visa">
+                    <img src="assets/images/mastercard-logo.png" alt="Mastercard">
                 </article>
                 <p>Información sobre métodos de pago.</p>
             </section>
-            <article class="list-section center">
+            <article class="list-section-center">
                 <ul>
                     <li>Texto de la lista 1</li>
                     <li>Texto de la lista 2</li>
                     <li>Texto de la lista 3</li>
                 </ul>
             </article>
-            <article class="list-section right">
+            <article class="list-section-right">
                 <ul>
                     <li>Texto de la lista 1</li>
                     <li>Texto de la lista 2</li>
@@ -133,7 +166,7 @@
                 </ul>
             </article>
         </section>
-    
+
         <!-- Tercera sección -->
         <section class="social-section">
             <article class="social-icons">
@@ -184,9 +217,9 @@
             </section>
             <section class="copyright">
                 <span>© 2024 - 2024 Pitch Perfect.</span>
-                <span class="eslogan">Haz música, hazla perfecta</span>
+                <span class="eslogan">Haz música, hazla perfecta.</span>
             </section>
         </section>
-    
-</main>
-
+    </footer>
+</body>
+</html>
