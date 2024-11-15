@@ -260,13 +260,14 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: white;
 }
 
 .image-slider {
   display: flex;
   gap: 20px; /* Espacio entre las imágenes */
-  transform: translateX(-10%); /* Para que las imágenes de los extremos sobresalgan */
-  width: 120%; /* Ancho total mayor que 100% para que sobresalga */
+  transform: translateX(-0%); /* Para que las imágenes de los extremos sobresalgan */
+  width: 100%; /* Ancho total mayor que 100% para que sobresalga */
   justify-content: space-between;
   align-items: center;
   margin-top: 15px
@@ -288,13 +289,65 @@ main {
 
 /* SECCION DE CATEGORIAS */
 
-section.categories {
+/* Categorías - Contenedor principal */
+.categories {
+  padding: 20px;
+  text-align: center;
+  margin: 0 15vw;
+}
+
+.categories h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Grid de categorías */
+.category-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
-  grid-template-rows: auto auto; /* 2 filas */
-  gap: 0; /* Espacio entre los elementos */
-  padding: 15px;
-  background-color: rgb(203, 203, 203);
+  grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+  gap: 20px; /* Espaciado entre elementos */
+}
+
+/* Cada categoría */
+.category {
+  display: grid;
+  grid-template-columns: auto 1fr; /* Imagen a la izquierda, título a la derecha */
+  align-items: center; /* Centrar elementos verticalmente */
+  width: 350px;
+}
+
+.category h3 {
+  font-size: 1.rem;
+  margin-bottom: 10px;
+}
+
+.category img {
+  width: 100px;
+  height: auto; /* Mantener proporción */
+  border-radius: 10px; /* Opcional: esquinas redondeadas */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Opcional: sombra */
+}
+
+/* Línea horizontal */
+.category hr {
+  grid-column: 1 / -1; /* Hacer que el <hr> abarque toda la fila */
+  margin-top: 5px;
+  border: 0;
+  border-top: 1px solid #ededed;
+}
+
+/* Para que sea responsive */
+
+@media (max-width: 768px) {
+  .category-grid {
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .category-grid {
+    grid-template-columns: 1fr; /* Una columna en pantallas muy pequeñas */
+  }
 }
 
 /* Estilos para el footer */
