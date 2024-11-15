@@ -324,8 +324,8 @@ main {
 .category img {
   width: 100px;
   height: auto; /* Mantener proporción */
-  border-radius: 10px; /* Opcional: esquinas redondeadas */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Opcional: sombra */
+  border-radius: 10px; /* Esquinas redondeadas */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
 }
 
 /* Línea horizontal */
