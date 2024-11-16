@@ -302,9 +302,6 @@ main {
   color: inherit;
 }
 
-.categories.a:hover {
-  background-color: #007bff;
-}
 .categories h2 {
   font-size: 2.2rem;
   margin-bottom: 20px;
@@ -397,6 +394,7 @@ article.product {
 .rating {
   font-weight: 700;
   font-size: 1.2em;
+  color:rgb(215, 162, 0)
 }
 
 .nota {
@@ -440,11 +438,23 @@ section.brands {
 
 .brands ul li img {
   width: 100%;
-  background-color: rgb(255, 255, 255);
-  /* border-radius: 10px;
-  border-style: groove;
-  border-color: #000000; */ /*No me convence :( */
+  transition: transform 0.1s ease-in-out;
+
 }
+
+.brands ul li img:hover {
+  transform: scale(1.22); /* Aumenta el tamaño al 120% */
+}
+
+/* Esto no me convence */
+
+/* .brands ul li img:hover { 
+  width: 100%;
+  background-color: rgb(237, 237, 237);
+  border-radius: 10px;
+  border-style:outset;
+  border-color: #000000;
+} */
 
 /* Estilos para el footer */
 footer {
@@ -571,12 +581,14 @@ article.payment-images {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  gap: 5px
 
 }
 
-.payment-images img{
+.payment-images img {
   margin-bottom: 10px; /* Espacio debajo de las imágenes */
-  height: 27px;
+  height: 30px;
+  width: auto;
 }
 
 .payment-icon {
