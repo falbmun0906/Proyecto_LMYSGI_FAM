@@ -22,6 +22,15 @@ header {
   flex-direction: column;
 }
 
+img {
+  width: 100%;
+  transition: transform 0.1s ease-in-out; /* Suaviza la transición */
+}
+
+img:hover {
+  transform: scale(1.02); /* Aumenta el tamaño al 120% */
+}
+
 section.header-top {
   width: 100%;
   height: 150px;
@@ -29,13 +38,11 @@ section.header-top {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  background-color: #efefef; /* Color de fondo */
+  background-color: #f7f7f7; /* Color de fondo */
   padding: 10px 0px; /* Espaciado interno */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra del cabecero */
   color: inherit;
 }
-
-
 
 /* Estilos para la navegación izquierda */
 nav.left {
@@ -365,6 +372,10 @@ section.all-featured {
   margin-top: 50px;
 }
 
+.all-featured h2 {
+  font-weight: 700;
+}
+
 section.featured article img {
   width: 100%;
   height: auto; /* Mantener proporción */
@@ -404,6 +415,35 @@ article.product {
 
 .product h3 {
   font-size: 1em;
+}
+
+/* Sección Nuestras marcas */
+
+section.brands {
+  display: flex;
+  flex-direction: column;
+  padding: 0 15vw;
+  margin-top: 50px;
+  gap:20px;
+  margin-bottom: 20px
+}
+
+.brands h2 {
+  text-decoration: underline;
+  font-size: 1.2rem;
+}
+
+.brands ul {
+  display: flex;
+  gap: 10px
+}
+
+.brands ul li img {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  /* border-radius: 10px;
+  border-style: groove;
+  border-color: #000000; */ /*No me convence :( */
 }
 
 /* Estilos para el footer */
