@@ -42,7 +42,7 @@ section.header-top {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  background-color: #e0e0e0; /* Color de fondo */
+  background-color: #ffffff; /* Color de fondo */
   padding: 10px 0px; /* Espaciado interno */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra del cabecero */
   color: inherit;
@@ -104,7 +104,8 @@ nav.center input[type="search"] {
   height: 35px; /* Altura del input */
   font-size: 1.2em; /* Tamaño de la fuente */
   padding: 15px; /* Espaciado interno */
-  border: 0px solid #5b5b5b; /* Borde */
+  border: 2px solid #5b5b5b; /* Borde */
+  border-color: rgb(220, 220, 220);
   border-radius: 20px; /* Bordes redondeados */
   box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
 }
@@ -156,6 +157,9 @@ nav.right button:hover {
 }
 
 section.header-bottom {
+  position: sticky;
+  top: 0;
+  z-index: 100;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -207,7 +211,6 @@ section.header-bottom {
   margin-top: 3px;
 }
 .slider {
-  position: absolute;
   cursor: pointer;
   top: 0;
   left: 0;
@@ -510,6 +513,10 @@ article.left {
   align-items: flex-start;
 }
 
+.text-content h3 {
+  font-size: 1.5em;
+}
+
 article.text-content {
   display: flex;
   flex-direction: column;
@@ -545,7 +552,7 @@ article.newsletter-register {
 }
 
 .text-content ul li {
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin-bottom: 15px;
 }
 
@@ -564,6 +571,7 @@ input[type="text"] {
   padding: 10px; /* Espaciado interno del input */
   border: 1px solid #ccc; /* Borde del input */
   border-radius: 5px; /* Bordes redondeados */
+  border-color: gr;
 }
 
 button {
@@ -616,6 +624,7 @@ article.payment-images {
 
 .payment-section-left p {
   font-size: 0.7em;
+  width: 75%;
 }
 .payment-section-left {
   flex: 0 0 calc(33% - (15px / 2));
@@ -679,6 +688,10 @@ article.payment-section-right {
 .social-icons img{
   width: 10 px;
   height: 25px;
+}
+
+.social-icons img:hover {
+  transform: scale(1.5); /* Aumenta el tamaño al 120% */
 }
 
 .links:nth-of-type(1) {
