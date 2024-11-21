@@ -745,3 +745,50 @@ section.copyright {
   font-style: italic;
   font-weight: bold;
 }
+
+/* PÁGINA DOS */
+
+.category-home {
+  background-image: url("../images/cat-home/cat-guitar-home-expanded.png");
+  background-size:cover;
+  background-position: center;
+  width: 100%;
+  height: 250px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0 15px;
+  color: white;
+  padding: 0 10vw;
+}
+
+.fa-arrow-left {
+  color: white;
+}
+
+.category-home button {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(194, 194, 194);
+}
+
+.previous-cat {
+  display: flex;
+  align-items: center;
+  background-color: rgb(142, 142, 142);
+  height: 30px;
+  width: auto;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.category-home span {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+
+.category-home h1 {
+  width: 100%;
+  font-size: 3em;
+}
