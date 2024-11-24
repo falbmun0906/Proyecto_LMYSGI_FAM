@@ -927,39 +927,236 @@ section.copyright {
 /* PÁGINA SIETE */
 /* ---------- */
 
-header.login {
-  display:flex;
-  justify-content: flex-start;
-  width: 100%;
-  padding: 30px;
-}
-
-.login a {
-
-}
-
-.login a img {
-  width: 30%;
+.logo2 img {
+  max-width: 200px; /* Ajusta el ancho máximo de la imagen */
+  height: auto; /* Mantiene la proporción de la imagen */
+  object-fit: contain; /* Opcional: asegura que la imagen encaje en su contenedor */
+  margin-bottom: 15px;
 }
 
 main.login {
+  color: rgb(0, 0, 0);
+  place-items: center; /* Centra horizontal y verticalmente */
+  min-height: 100vh; /* Hace que el body ocupe toda la pantalla */
+  background-color: #2b2b2b; /* Opcional: añade un color de fondo */
+}
+
+.main-container-login {
   display: flex;
-  justify-content: center;
+  justify-content: space-between; /* Se coloca la imagen y el formulario uno al lado del otro */
   align-items: center;
-  height: 100vh;
+  height: 70vh; /* Hace que ocupe toda la altura de la pantalla */
 }
 
-main.login div {
-  display: flex;
-  width: 720px;
-  height: 720px;
-  margin: 0 auto;
-  border: solid 1px red;
-  gap: 10px;
-}
-
-main.login div section {
-  width: 100%;
+.login-container {
+  max-width: 50%; /* Establece un ancho máximo para que el formulario no sea demasiado grande */
+  width: 100%; /* Hace que el formulario ocupe el ancho disponible */
   height: 100%;
-  border: solid 1px;
+  padding: 10% 6%;
+  background-color: #f3f3f3; /* Fondo blanco para el formulario */
+  border-radius: 5px; /* Bordes redondeados */
 }
+
+@media (max-width: 868px) {
+  .login-portrait {
+      display: none; /* Oculta la imagen */
+  }
+  
+  /* Asegura que el formulario ocupe toda la pantalla en pantallas pequeñas */
+  .main-container-login {
+      flex-direction: column; /* Muestra las secciones en columna (el formulario arriba y la imagen desaparece) */
+      height: auto; /* El contenedor ya no necesita ocupar toda la altura de la pantalla */
+  }
+  
+  .login-container {
+      max-width: 100%; /* Hace que el formulario ocupe el ancho completo */
+      margin: 0 20px; /* Agrega un pequeño margen */
+  }
+}
+
+/* .login-container,
+.login-portrait {
+  border: 4px solid rgb(27, 27, 27);
+  border-radius: 5px;
+} */
+
+.login-portrait {
+  border-left: none; /* Evita el borde izquierdo en la segunda sección */
+}
+
+main.login div section img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.login-container h2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.0em;
+  font-weight: bold;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;  /* Centramos los elementos dentro del grupo */
+  margin-bottom: 20px;  /* Espacio entre los grupos de campos */
+}
+
+.form-group label {
+  display: flex;
+  justify-content: center;  /* Centrar el contenido del label (el icono y texto) */
+  align-items: center;  /* Asegura que el contenido se alinee verticalmente */
+  width: 40px;  /* Define el ancho del label */
+  height: 40px; /* Ajusta la altura para que coincida con el input */
+  border: solid 2px rgb(37, 37, 37);
+  border-radius: 10px;
+  background-color: #f3f3f3;
+}
+
+.form-group label .icon {
+  font-size: 1.3em;
+}
+
+
+input[type="email"],
+input[type="password"] {
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  width: 300px; /* Ajustar el ancho de los campos */
+  background-color: rgb(255, 255, 255);
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color:#000;
+}
+
+.login-button {
+  padding: 10px;
+  background-color: #9f9f9f;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 50%; /* Ajustar el ancho del botón */
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;  /* Separar los elementos de la izquierda (recuerdame) y derecha (iniciar sesión) */
+  align-items: center;
+  margin-bottom: 45px
+}
+
+.form-options label {
+  font-size: 0.9rem;
+}
+
+.yet {
+  margin-right: 5px;
+}
+
+.login-container form a:hover {
+  font-weight: bold;
+  color: black;
+}
+
+main.login div section img:hover {
+  transform: scale(1);
+}
+
+.login-container .yet, a {
+  font-size: 0.9em
+}
+
+/* Separador con líneas */
+.separator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.separator .line {
+  width: 45%;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.separator li span {
+  margin: 0 20px;
+  font-size: 1.2em;
+  color: #333;
+}
+
+/* Estilo de los botones sociales */
+
+.social-login {
+  display: inline-flex; /* Usamos inline-flex para alinear el icono y el texto en línea */
+  align-items: center;  /* Alineamos los elementos (icono y texto) verticalmente */
+}
+
+.social-login i {
+  margin-right: 10px;    /* Añadimos un margen entre el icono y el texto */
+  font-size: 1.2rem;      /* Ajustamos el tamaño del icono (puedes cambiarlo según tu preferencia) */
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.social-buttons ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.social-buttons button {
+  background-color: #232323;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.1em;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  max-width: 300px;
+}
+
+.social-buttons img {
+  width: 1px; /* Ajusta el tamaño del icono */
+  height: auto;
+}
+
+.social-login.facebook {
+  background-color: #3b5998;
+}
+
+.social-login.x {
+  background-color: #2b2b2b;
+  gap: 25px;
+}
+
+.social-login.google {
+  background-color: #db4437;
+}
+
+.social-login:hover {
+  opacity: 0.9; /* Efecto hover */
+}
+
+

@@ -24,29 +24,56 @@
     <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon"> <!-- Icono que aparece en la pestaña del navegador -->
 
     <!-- Accesibilidad -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Librería de iconos accesibles -->
+    <script src="https://kit.fontawesome.com/218b422903.js" crossorigin="anonymous"></script>
 
     <!-- Prevenir la escala de la página cuando se usa en dispositivos móviles -->
     <meta name="robots" content="index, follow"> <!-- Permite a los motores de búsqueda indexar el sitio -->
 </head>
 <body>
-    <header class="login">
-        <a href="index.html" class="logo2">
-            <img src="assets/images/pitch-up-logo2.png" alt="Logo" />
-        </a>
-    </header>
     <main class="login">
         <a href="index.html" class="logo2">
-            <img src="assets/images/pitch-up-logo2.png" alt="Logo" />
+            <img src="assets/images/pitch-up-logo2-w.png" alt="Logo" />
         </a>
-        <div>
-            <section>
-                prueba
+        <div class="main-container-login">
+            <section class="login-container">
+                <h2>Iniciar sesión</h2>
+                <form action="#" method="post">
+                    <div class="form-group">
+                      <label for="email"><span class="icon">👤</span></label>
+                      <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="password"><span class="icon">🔑</span></label>
+                      <input type="password" id="password" name="password" placeholder="Contraseña" required>
+                    </div>
+                    <div class="form-options">
+                      <label class="remember-me">
+                        <input type="checkbox" name="remember"> Recuérdame
+                      </label>
+                      <button class="login-button" type="submit">Iniciar sesión</button>
+                    </div>
+                    <span class="yet">¿Aún no tienes cuenta?</span>
+                    <a href="#">Regístrate</a>
+                </form>
+                <!-- Separador usando una lista semántica -->
+                <ul class="separator">
+                    <li class="line"></li>
+                    <li><span>o</span></li>
+                    <li class="line"></li>
+                </ul>
+
+                <!-- Botones de inicio de sesión social dentro de un <nav> semántico -->
+                <nav class="social-buttons">
+                    <ul>
+                        <li><button class="social-login facebook"><i class="fab fa-facebook-f"></i> Iniciar con Facebook</button></li>
+                        <li><button class="social-login x"><i class="fa-brands fa-x-twitter"></i></i> Iniciar con X</button></li>
+                        <li><button class="social-login google"><i class="fab fa-google"></i> Iniciar con Google</button></li>
+                    </ul>
+                </nav>
             </section>
-            <section>
-                prueba
+            <section class="login-portrait">
+                <img src="assets/images/login-register/login3.png" alt="Logo" />
             </section>
         </div>
     </main>
-
 </body>
