@@ -253,11 +253,12 @@ section.header-bottom {
     flex-direction: column; /* Diseño en columna para el menú desplegable */
     background-color: #232323;
     position: absolute;
+    opacity: 95%;
     top: 100%; /* Posición justo debajo del botón hamburguesa */
     left: 0;
     width: 100%; /* Ocupa todo el ancho */
     padding: 20px 10vw;
-    margin-top: 10px;
+    margin-top: 23px;
     z-index: 999;
     gap: 10px;
   }
