@@ -974,12 +974,6 @@ main.login {
   }
 }
 
-/* .login-container,
-.login-portrait {
-  border: 4px solid rgb(27, 27, 27);
-  border-radius: 5px;
-} */
-
 .login-portrait {
   border-left: none; /* Evita el borde izquierdo en la segunda sección */
 }
@@ -1011,7 +1005,7 @@ main.login div section img {
   align-items: center;  /* Asegura que el contenido se alinee verticalmente */
   width: 40px;  /* Define el ancho del label */
   height: 40px; /* Ajusta la altura para que coincida con el input */
-  border: solid 2px rgb(37, 37, 37);
+  border: solid 1px rgb(156, 156, 156);
   border-radius: 10px;
   background-color: #f3f3f3;
 }
@@ -1025,7 +1019,7 @@ input[type="email"],
 input[type="password"] {
   padding: 10px;
   font-size: 1rem;
-  border: 2px solid #000000;
+  border: 1px solid #a9a9a9;
   border-radius: 5px;
   width: 300px; /* Ajustar el ancho de los campos */
   background-color: rgb(255, 255, 255);
