@@ -88,7 +88,7 @@ nav.left ul li {
 nav.left ul li a {
   text-decoration: none; /* Sin subrayado */
   font-weight: none; /* Negrita */
-  font-size: 1em;
+  font-size: 1.1em;
   color: rgb(58, 58, 58)
 }
 
@@ -96,7 +96,7 @@ nav.left .icon {
   background: none; /* Sin fondo */
   border: none; /* Sin borde */
   cursor: pointer; /* Cambia el cursor al pasar por encima */
-  font-size: 1.7em; /* Tamaño del icono */
+  font-size: 1.5em; /* Tamaño del icono */
   color: inherit;
 }
 
@@ -166,10 +166,18 @@ nav.right button {
   color:#333;
 }
 
+.fa-language {
+  font-size: 1.5em;
+}
+
 /* Efecto hover para enlaces y botones */
 nav.left ul li a:hover,
 nav.right button:hover {
   color: #000000; /* Color al pasar el ratón */
+}
+
+.fa-heart:hover {
+  color: rgb(169, 47, 63);
 }
 
 section.header-bottom {
@@ -188,16 +196,22 @@ section.header-bottom {
 .header-bottom nav {
   width: 100%;
   padding: 0 10vw;
+  position: relative;
+  background-color: #232323;
 }
 
-.header-bottom nav ul {
+/* Estilo de la lista del menú */
+.menu {
   display: flex;
   justify-content: space-between;
-  gap: 3px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.header-bottom nav ul li a {
-  color: rgb(255, 255, 255);
+/* Estilo de los enlaces del menú */
+.menu li a {
+  color: white;
   background-color: rgb(35, 35, 35);
   padding: 8px 8px;
   border-radius: 12px;
@@ -205,8 +219,59 @@ section.header-bottom {
   text-decoration: none;
 }
 
-.header-bottom nav ul li a:hover {
-  background-color: #000000;
+.menu li a:hover {
+  background-color: #000;
+}
+
+/* Ocultar el checkbox (control del menú) */
+.menu-toggle {
+  display: none;
+}
+
+/* Botón hamburguesa (menú plegable) */
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  left: 11vw;  /* Alineado al lado izquierdo */
+  transform: translateY(-54%);  /* Ajuste fino para centrar verticalmente */
+  color: rgb(255, 255, 255);
+  z-index: 1000;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 1195px) {
+  /* Mostrar el botón hamburguesa */
+  .menu-icon {
+    display: block;
+  }
+
+  /* Ocultar el menú inicialmente */
+  .menu {
+    display: none;
+    flex-direction: column; /* Diseño en columna para el menú desplegable */
+    background-color: #232323;
+    position: absolute;
+    top: 100%; /* Posición justo debajo del botón hamburguesa */
+    left: 0;
+    width: 100%; /* Ocupa todo el ancho */
+    padding: 20px 10vw;
+    margin-top: 10px;
+    z-index: 999;
+    gap: 10px;
+  }
+
+  /* Mostrar el menú cuando el checkbox esté marcado */
+  .menu-toggle:checked ~ .menu {
+    display: grid; /* Cambiar de flex a grid */
+    grid-template-columns: repeat(4, 1fr); /* Dos columnas */
+  }
+
+  /* Ajuste de diseño para los elementos del menú */
+  .menu li {
+    margin: 5px 0;
+  }
 }
 
 /* The switch - the box around the slider */
@@ -375,23 +440,38 @@ main {
 
 /* Para que sea responsive */
 
-@media (max-width: 768px) {
+@media (max-width: 1195px) {
   .category-grid {
     grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas pequeñas */
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 650px) {
   .category-grid {
     grid-template-columns: 1fr; /* Una columna en pantallas muy pequeñas */
   }
 }
 
+@media (max-width: 1195px) {
+
+  article.product {
+    min-width: 45%;
+  }
+}
+
+@media (max-width: 680px) {
+  article.product {
+    min-width: 100%;
+  }
+}
+
 /* Sección Featured */
+
 
 section.all-featured {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 30px;
@@ -402,6 +482,8 @@ section.all-featured {
 .all-featured h2 {
   font-weight: 700;
   font-size: 2em;
+  width: 100%;
+  text-align: center;
 }
 
 section.featured article img {
@@ -413,12 +495,15 @@ section.featured article img {
 
 .featured {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 25px;
 }
 
 article.product {
   display: flex;
   flex-direction: column;
+  width: 23%;
   gap: 5px
 }
 
@@ -440,10 +525,6 @@ article.product {
 .reviews {
   color: gray;
   font-size: 0.8em
-}
-
-.product h3 {
-  font-size: 1em;
 }
 
 /* Sección Nuestras marcas */
@@ -715,7 +796,7 @@ article.payment-section-right {
 }
 
 .social-icons img{
-  width: 10 px;
+  width: auto;
   height: 25px;
 }
 
@@ -831,3 +912,12 @@ section.copyright {
 .price-old {
   text-decoration: line-through;
 }
+
+.black-friday {
+  margin-bottom: 40px;
+}
+
+.product a:hover {
+  color: rgb(200, 143, 0)
+}
+
