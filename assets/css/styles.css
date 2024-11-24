@@ -19,7 +19,7 @@ body {
   background-color: #c6c6c6; /* Fondo general */
 }
 
-header {
+header.pages {
   position: sticky;
   top: 0;
   z-index: 100;
@@ -157,7 +157,7 @@ nav.right ul.bottom {
   margin: 0px;
 }
 
-nav.right button {
+nav.right a {
   padding: 0 5;
   background: none; /* Sin fondo */
   border: none; /* Sin borde */
@@ -168,11 +168,12 @@ nav.right button {
 
 .fa-language {
   font-size: 1.5em;
+  margin-top: 4px
 }
 
 /* Efecto hover para enlaces y botones */
 nav.left ul li a:hover,
-nav.right button:hover {
+nav.right a:hover {
   color: #000000; /* Color al pasar el ratón */
 }
 
@@ -922,3 +923,43 @@ section.copyright {
   color: rgb(200, 143, 0)
 }
 
+/* ---------- */
+/* PÁGINA SIETE */
+/* ---------- */
+
+header.login {
+  display:flex;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 30px;
+}
+
+.login a {
+
+}
+
+.login a img {
+  width: 30%;
+}
+
+main.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+main.login div {
+  display: flex;
+  width: 720px;
+  height: 720px;
+  margin: 0 auto;
+  border: solid 1px red;
+  gap: 10px;
+}
+
+main.login div section {
+  width: 100%;
+  height: 100%;
+  border: solid 1px;
+}
