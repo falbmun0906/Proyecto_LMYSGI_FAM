@@ -10,22 +10,18 @@
   font-weight: 400; /* Aplica un peso de fuente ligero */
 }
 
-input, button {
-  line-height: normal;
+*::selection {
+  background-color: lightgray;
 }
 
 /* Body */
 body {
   background-color: #c6c6c6; /* Fondo general */
+  /* filter: invert() */
 }
 
-header.pages {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+input, button {
+  line-height: normal;
 }
 
 img {
@@ -46,6 +42,19 @@ a {
   color: inherit;
 }
 
+
+/* --------------------------- */
+/*--- Stickyness del Header ---*/
+/* --------------------------- */
+
+header.pages {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 
 /* ---------- */
 /* PÁGINA UNO */
@@ -86,7 +95,6 @@ nav.left ul li {
 }
 
 nav.left ul li a {
-  padding: 2px;
   text-decoration: none; /* Sin subrayado */
   font-weight: none; /* Negrita */
   font-size: 1.1em;
@@ -101,14 +109,11 @@ nav.left ul li a:hover {
 
 @media (max-width: 1195px) {
   .left ul {
-      flex-direction: column; /* Cambia a columna */
       align-items: flex-start;    /* Centra los elementos horizontalmente */
-      gap: 5px;
-
   }
 
-  .left ul li span {
-    display: none;
+  .left ul li {
+    font-size: 0.8rem;
   }
 }
 
@@ -1197,24 +1202,24 @@ main.login div section img:hover {
 /* Ajuste general de los inputs */
 .form-list input[type="text"],
 .form-list input[type="email"] {
-    width: 70%; /* Ajusta el ancho */
-    padding: 8px; /* Reduce el padding interno */
-    font-size: 0.9rem; /* Tamaño de texto más pequeño */
-    border: 1px solid #a9a9a9;
-    border-radius: 4px;
+  width: 70%; /* Ajusta el ancho */
+  padding: 8px; /* Reduce el padding interno */
+  font-size: 0.9rem; /* Tamaño de texto más pequeño */
+  border: 1px solid #a9a9a9;
+  border-radius: 4px;
 }
 
 /* Ajuste general de los labels */
 .form-list label {
-    display: flex;
-    justify-content: center; /* Centra el icono */
-    align-items: center;
-    width: 40px; /* Ancho fijo para el label */
-    height: 40px; /* Altura consistente */
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-right: 10px; /* Espacio entre label e input */
-    background-color: #f3f3f3;
+  display: flex;
+  justify-content: center; /* Centra el icono */
+  align-items: center;
+  width: 40px; /* Ancho fijo para el label */
+  height: 40px; /* Altura consistente */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px; /* Espacio entre label e input */
+  background-color: #f3f3f3;
 }
 
 /* Espaciado entre elementos */
@@ -1227,12 +1232,12 @@ main.login div section img:hover {
 
 /* Lista en columnas para maximizar el espacio */
 .form-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Ajusta las columnas */
-    gap: 5px; /* Espaciado entre columnas y filas */
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Ajusta las columnas */
+  gap: 5px; /* Espaciado entre columnas y filas */
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .register-container {
