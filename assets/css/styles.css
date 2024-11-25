@@ -977,6 +977,7 @@ main.login {
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
   overflow: hidden;
+  margin-bottom: 30px;
 }
 
 
@@ -988,6 +989,7 @@ main.login {
   .main-container-login {
     flex-direction: column; /* Cambia disposición a columna */
     max-width: 400px; /* Máximo ancho del contenedor */
+    margin-bottom: 30px;
   }
 
   .login-portrait {
@@ -1242,6 +1244,7 @@ main.login div section img:hover {
 
 .register-container {
   flex: 1;
+  min-width: 390px;
 }
 
 .register-container ul {
