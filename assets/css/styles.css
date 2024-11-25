@@ -59,7 +59,7 @@ section.header-top {
   justify-content: space-around;
   align-items: center;
   background-color: #ffffff; /* Color de fondo */
-  padding: 10px 0px; /* Espaciado interno */
+  padding: 15px 0px; /* Espaciado interno */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra del cabecero */
   color: inherit;
 }
@@ -86,18 +86,30 @@ nav.left ul li {
 }
 
 nav.left ul li a {
+  padding: 2px;
   text-decoration: none; /* Sin subrayado */
   font-weight: none; /* Negrita */
   font-size: 1.1em;
-  color: rgb(58, 58, 58)
+  color: rgb(42, 42, 42)
 }
 
-nav.left .icon {
-  background: none; /* Sin fondo */
-  border: none; /* Sin borde */
-  cursor: pointer; /* Cambia el cursor al pasar por encima */
-  font-size: 1.5em; /* Tamaño del icono */
-  color: inherit;
+nav.left ul li a:hover {
+  color: black;
+  background-color: rgb(241, 241, 241);
+  border-radius: 10px;
+}
+
+@media (max-width: 1195px) {
+  .left ul {
+      flex-direction: column; /* Cambia a columna */
+      align-items: flex-start;    /* Centra los elementos horizontalmente */
+      gap: 5px;
+
+  }
+
+  .left ul li span {
+    display: none;
+  }
 }
 
 /* Estilos para la navegación central */
@@ -118,6 +130,7 @@ nav.center .logo img{
 nav.center input[type="search"] {
   width: 25vw; /* Ancho del input */
   height: 35px; /* Altura del input */
+  min-width: 350px;
   font-size: 1.2em; /* Tamaño de la fuente */
   padding: 15px; /* Espaciado interno */
   border: 2px solid; /* Borde */
@@ -157,22 +170,24 @@ nav.right ul.bottom {
   margin: 0px;
 }
 
+.head-nav-icon {
+  font-size: 1.5em
+}
+
 nav.right a {
   padding: 0 5;
   background: none; /* Sin fondo */
   border: none; /* Sin borde */
   cursor: pointer; /* Cambia el cursor al pasar por encima */
-  font-size: 1.3em; /* Tamaño del botón */
   color:#333;
 }
 
 .fa-language {
-  font-size: 1.5em;
+  font-size: 2em;
   margin-top: 4px
 }
 
 /* Efecto hover para enlaces y botones */
-nav.left ul li a:hover,
 nav.right a:hover {
   color: #000000; /* Color al pasar el ratón */
 }
@@ -235,7 +250,6 @@ section.header-bottom {
   font-size: 2rem;
   cursor: pointer;
   position: absolute;
-  left: 11vw;  /* Alineado al lado izquierdo */
   transform: translateY(-54%);  /* Ajuste fino para centrar verticalmente */
   color: rgb(255, 255, 255);
   z-index: 1000;
@@ -281,7 +295,7 @@ section.header-bottom {
   display: inline-block;
   position: relative;
   width: 45px;
-  height: 26px;
+  height: 22px;
   margin: 0 auto;
 }
 
@@ -312,10 +326,10 @@ section.header-bottom {
 .slider:before {
   position: absolute;
   content: "";
-  height: 18px;
-  width: 18px;
+  height: 16px;
+  width: 16px;
   left: 4px;
-  bottom: 3.5px;
+  bottom: 2.8px;
   background-color: rgb(255, 255, 255);
   -webkit-transition: .6s;
   transition: .6s;
@@ -797,13 +811,15 @@ article.payment-section-right {
   grid-column: 1; /* Ocupa las tres columnas en la primera fila */
 }
 
-.social-icons img{
+.social-icon {
+  font-size: 2.0em;
+  color: rgb(255, 255, 255);
   width: auto;
-  height: 25px;
+  margin-bottom: 10px;
 }
 
-.social-icons img:hover {
-  transform: scale(1.2); /* Aumenta el tamaño al 120% */
+.social-icon:hover {
+  transform: scale(1.2);
 }
 
 .links:nth-of-type(1) {
@@ -976,9 +992,9 @@ main.login {
   .login-container {
     flex: none; /* Resetea la proporción */
     width: 100%; /* Ocupa todo el contenedor */
-    padding: 20px; /* Ajusta el espaciado */
+    padding: 30px; /* Ajusta el espaciado */
     box-shadow: none; /* Opcional: elimina la sombra si no quieres redundancia */
-    margin-bottom: 15px;
+
   }
 }
 
@@ -1026,7 +1042,8 @@ form h2 {
 }
 
 .form-group label .icon {
-  font-size: 1.3em;
+  font-size: 1.2em;
+  color: rgb(31, 31, 31)
 }
 
 
@@ -1069,7 +1086,13 @@ input[type="password"]:focus {
 }
 
 .yet {
-  margin-right: 5px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.yet span, .yet a {
+  font-size: 1em;
 }
 
 .login-container form a:hover {
@@ -1167,3 +1190,68 @@ main.login div section img:hover {
 }
 
 
+/* ---------- */
+/* PÁGINA OCHO */
+/* ---------- */
+
+/* Ajuste general de los inputs */
+.form-list input[type="text"],
+.form-list input[type="email"] {
+    width: 70%; /* Ajusta el ancho */
+    padding: 8px; /* Reduce el padding interno */
+    font-size: 0.9rem; /* Tamaño de texto más pequeño */
+    border: 1px solid #a9a9a9;
+    border-radius: 4px;
+}
+
+/* Ajuste general de los labels */
+.form-list label {
+    display: flex;
+    justify-content: center; /* Centra el icono */
+    align-items: center;
+    width: 40px; /* Ancho fijo para el label */
+    height: 40px; /* Altura consistente */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px; /* Espacio entre label e input */
+    background-color: #f3f3f3;
+}
+
+/* Espaciado entre elementos */
+.form-list li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px; /* Reduce el espacio vertical */
+}
+
+/* Lista en columnas para maximizar el espacio */
+.form-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Ajusta las columnas */
+    gap: 5px; /* Espaciado entre columnas y filas */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.register-container {
+  flex: 1;
+}
+
+.register-container ul {
+  width: 100%;
+}
+
+.register-container h2 {
+  margin-bottom: 10px;
+}
+
+.register-button {
+  margin-top: 0;
+}
+
+.form-list label .icon {
+  font-size: 1.2em;
+  color: rgb(31, 31, 31)
+}
