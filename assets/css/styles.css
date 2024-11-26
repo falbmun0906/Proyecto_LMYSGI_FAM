@@ -1255,3 +1255,176 @@ main.login div section img:hover {
   font-size: 1.2em;
   color: rgb(31, 31, 31)
 }
+
+/* ---------- */
+/* PÁGINA TRES */
+/* ---------- */
+
+.main-bass {
+  height: auto;
+}
+
+.main-bass-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: 20px 10vw;
+  margin: 0 auto;
+  gap: 10px;
+}
+
+/* General styles for filters */
+.filters {
+  padding: 20px;
+  border-radius: 5px;
+  background-color: rgb(238, 238, 238)
+}
+
+.filters h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+/* Fieldset and Legend */
+.filter-item fieldset {
+  border: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.filter-item legend {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+label[for="price-range"] {
+  color: #000000;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.price-range input {
+  width: 50px;
+  height: 25px;
+  text-align: center;
+  border: solid 1px lightgray;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+/* List styles */
+.filters ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+.filters ul li label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.filters ul li label input {
+  margin-top: 5px;
+}
+
+.filter-item li {
+  margin-bottom: 10px;
+}
+
+/* Checkbox options */
+.options input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Reseñas */
+.rating-filter {
+  display: flex;
+  gap: 5px;
+}
+
+.rating-filter .star {
+  font-size: 1.5rem;
+  color: #ccc;
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+.rating-filter .star:hover,
+.rating-filter .star.selected {
+  color: #ffc107;
+}
+
+@media (max-width: 1195px) {
+  .filters {
+    display: none;
+  }
+}
+
+.bass-products {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bass-product {
+  min-height: 225px;
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  border-radius: 5px;
+  background-color: rgb(238, 238, 238)
+}
+
+
+.bass-product img {
+  width: 20%;
+  object-fit: cover;
+  background-color: rgb(244, 244, 244);
+  padding: 5px;
+}
+
+.bass-product-info {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.bass-product-info h3 {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.bass-rating {
+  font-weight: 700;
+  font-size: 1.2em;
+  color:rgb(215, 162, 0);
+  margin-bottom: 10px;
+}
+
+.bass-product-buy {
+  flex: 0 0 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-right: 10px;
+}
+
+.bass-product-buy div {
+  display: flex;
+  gap: 20px;
+}
+
+.bass-product-buy h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.bass-product ul {
+  list-style: disc;
+  margin-left: 15px;
+}

@@ -1,0 +1,480 @@
+<head>
+    <!-- Meta información para el navegador y SEO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tienda en línea de instrumentos musicales">
+    <meta name="keywords" content="instrumentos musicales, guitarras, teclados, percusión, tienda online">
+    <meta name="author" content="Francisco Alba Muñoz">
+
+    <!-- Para asegurar compatibilidad con navegadores antiguos -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Título de la página -->
+    <title>PitchUp</title>
+
+    <!-- Fuentes accesibles -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> <!-- Fuentes de Google para mejorar la legibilidad -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Link a los archivos de estilo CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <!-- Icono de la página (favicon) PENDIENTE --> 
+    <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon"> <!-- Icono que aparece en la pestaña del navegador -->
+
+    <!-- Accesibilidad -->
+    <script src="https://kit.fontawesome.com/218b422903.js" crossorigin="anonymous"></script>
+
+
+    <!-- Prevenir la escala de la página cuando se usa en dispositivos móviles -->
+    <meta name="robots" content="index, follow"> <!-- Permite a los motores de búsqueda indexar el sitio -->
+</head>
+<body>
+    <body>
+        <header class="pages">
+            <section class="header-top">
+                <nav class="left">
+                    <ul>
+                        <li><a href="#servicio">Servicio</a></li>
+                        <li><span>·</span></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                        <li><span>·</span></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                    </ul>
+                </nav>
+                <nav class="center">
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/pitch-up-logo.png" alt="Logo" />
+                    </a>
+                    <input type="search" placeholder="Buscar...">
+                </nav>
+                <nav class="right">
+                    <ul class="top">
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                        <li><a class="language"><i class="head-nav-icon fas fa-language"></i></a></li>
+                    </ul>
+                    <ul class="bottom">
+                        <li><a><i class="head-nav-icon fa-solid fa-euro-sign"></i></a></li>
+                        <li><a href="07-iniciodesesion.html"><i class="head-nav-icon far fa-user-circle"></i></a></li>
+                        <li><a><i class="head-nav-icon far fa-heart"></i></a></li>
+                        <li><a><i class="head-nav-icon fas fa-shopping-cart"></i></a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="header-bottom">
+                <nav>
+                    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+                    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+                    <ul class="menu">
+                        <li><a href="01-guitarrasybajos.html">Guitarras/Bajos</a></li>
+                        <li><a href="#baterias">Baterías</a></li>
+                        <li><a href="#teclados">Teclados</a></li>
+                        <li><a href="#estudio">Estudio</a></li>
+                        <li><a href="#software">Software</a></li>
+                        <li><a href="#viento">Viento</a></li>
+                        <li><a href="#micros">Micros</a></li>
+                        <li><a href="#tradicional">Tradicional</a></li>
+                        <li><a href="#cables">Cables</a></li>
+                        <li><a href="#accesorios">Accesorios</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </header>
+        <main class="main-bass">
+            <section class="category-home">
+                <a href="index.html" class="previous-cat"><span class="fa fa-home"></span></a>
+                <span>·</span>
+                <a href="index.html" class="previous-cat">Todas las categorías</a>
+                <span>·</span>
+                <a href="index.html" class="previous-cat">Guitarras y bajos</a>
+                <span>·</span>
+                <p>Bajos eléctricos</p>
+                <h1> Bajos eléctricos </h1>
+            </section>
+            <div class="main-bass-container">
+                <section class="filters">
+                    <h2>Filtrar</h2>
+                    <ul class="filters-main-list">
+                        <li class="filter-item">
+                            <label for="price-range">Precio</label>
+                            <div class="price-range">
+                                <input type="number" id="price-min" name="price-min" placeholder="Mín" min="0">
+                                <span>-</span>
+                                <input type="number" id="price-max" name="price-max" placeholder="Máx" min="0">
+                            </div>
+                        </li>
+                        <ul>
+                            <!-- Fabricantes -->
+                            <li class="filter-item">
+                                <fieldset>
+                                    <legend>Fabricantes</legend>
+                                    <ul>
+                                        <li><label><input type="checkbox" name="fabricantes" value="Warwick">Warwick (8)</label></li>
+                                        <li><label><input type="checkbox" name="fabricantes" value="Ibanez">Ibanez (15)</label></li>
+                                        <li><label><input type="checkbox" name="fabricantes" value="fabricante3">Cort (10)</label></li>
+                                        <li><label><input type="checkbox" name="fabricantes" value="Cort">Fender (12)</label></li>
+                                        <li><label><input type="checkbox" name="fabricantes" value="fabricante2">Music Man (7)</label></li>
+                                        <li><label><input type="checkbox" name="fabricantes" value="Music Man">Yamaha (9)</label></li>
+                                        <li><label><input type="checkbox" name="fabricantes" value="Samberg">Samberg (5)</label></li>
+                                        <li><label><input type="checkbox" name="fabricantes" value="Schecter">Schecter (4)</label></li>
+                                        <li><label><input type="checkbox" name="fabricantes" value="Epiphone">Epiphone (3)</label></li>
+                                        <li><label><input type="checkbox" name="fabricantes" value="Squier">Squier (6)</label></li>
+                                    </ul>
+                                </fieldset>
+                            </li>
+                            <!-- Reseñas -->
+                            <li class="filter-item">
+                                <fieldset>
+                                    <legend>Reseñas</legend>
+                                    <ul>
+                                        <li><label><input type="checkbox" name="rating" value="3-stars"><span class="rating">★★★☆☆</span></label></li>
+                                        <li><label><input type="checkbox" name="rating" value="4-stars"><span class="rating">★★★★☆</span></label></li>
+                                        <li><label><input type="checkbox" name="rating" value="5-stars"><span class="rating">★★★★★</span></label></li>
+                                    </ul>
+                                </fieldset>
+                            </li>
+                    
+                            <!-- Disponibilidad -->
+                            <li class="filter-item">
+                                <fieldset>
+                                    <legend>Disponibilidad</legend>
+                                    <ul>
+                                        <li><label><input type="checkbox" name="disponibilidad" value="en-stock">En stock</label></li>
+                                        <li><label><input type="checkbox" name="disponibilidad" value="bajo-pedido">Bajo pedido</label></li>
+                                    </ul>
+                                </fieldset>
+                            </li>
+                    
+                            <!-- Color -->
+                            <li class="filter-item">
+                                <fieldset>
+                                    <legend>Color</legend>
+                                    <ul>
+                                        <li><label><input type="checkbox" name="color" value="black">Negro (20)</label></li>
+                                        <li><label><input type="checkbox" name="color" value="white">Blanco (14)</label></li>
+                                        <li><label><input type="checkbox" name="color" value="red">Rojo (10)</label></li>
+                                        <li><label><input type="checkbox" name="color" value="blue">Azul (9)</label></li>
+                                        <li><label><input type="checkbox" name="color" value="sunburst">Sunburst (15)</label></li>
+                                        <li><label><input type="checkbox" name="color" value="natural">Natural (7)</label></li>
+                                        <li><label><input type="checkbox" name="color" value="metallic-gray">Gris metálico (3)</label></li>
+                                        <li><label><input type="checkbox" name="color" value="olive-green">Verde oliva (1)</label></li>
+                                    </ul>
+                                </fieldset>
+                            </li>
+                    
+                            <!-- Forma -->
+                            <li class="filter-item">
+                                <fieldset>
+                                    <legend>Cuerpo</legend>
+                                    <ul>
+                                        <li><label><input type="checkbox" name="cuerpo" value="poplar">Álamo</label></li>
+                                        <li><label><input type="checkbox" name="cuerpo" value="alder">Aliso</label></li>
+                                        <li><label><input type="checkbox" name="cuerpo" value="Ash">Fresno</label></li>
+                                        <li><label><input type="checkbox" name="cuerpo" value="mahogany">Caoba</label></li>
+                                        <li><label><input type="checkbox" name="cuerpo" value="solid-wood">Madera sólida</label></li>
+                                        <li><label><input type="checkbox" name="cuerpo" value="laminated-wood">Madera laminada</label></li>
+                                    </ul>
+                                </fieldset>
+                            </li>
+                    
+                            <!-- Configuración de pastillas -->
+                            <li class="filter-item">
+                                <fieldset>
+                                    <legend>Configuración de pastillas</legend>
+                                    <ul>
+                                        <li><label><input type="checkbox" name="pastillas" value="p">P</label></li>
+                                        <li><label><input type="checkbox" name="pastillas" value="j">J</label></li>
+                                        <li><label><input type="checkbox" name="pastillas" value="pj">PJ</label></li>
+                                        <li><label><input type="checkbox" name="pastillas" value="hh">HH</label></li>
+                                        <li><label><input type="checkbox" name="pastillas" value="h">H</label></li>
+                                        <li><label><input type="checkbox" name="pastillas" value="soapbar">Soapbar</label></li>
+                                        <li><label><input type="checkbox" name="pastillas" value="mm">MM</label></li>
+                                        <li><label><input type="checkbox" name="pastillas" value="hss">HSS</label></li>
+                                        <li><label><input type="checkbox" name="pastillas" value="triple-coil">Triple Coil</label></li>
+                                        
+                                    </ul>
+                                </fieldset>
+                            </li>
+                    
+                            <!-- Incluye maleta -->
+                            <li class="filter-item">
+                                <fieldset>
+                                    <legend>Incluye maleta</legend>
+                                    <ul>
+                                        <li><label><input type="checkbox" name="maleta" value="si"> Sí</label></li>
+                                        <li><label><input type="checkbox" name="maleta" value="no"> No</label></li>
+                                    </ul>
+                                </fieldset>
+                            </li>
+                    
+                            <!-- Incluye correa -->
+                            <li class="filter-item">
+                                <fieldset>
+                                    <legend>Incluye correa</legend>
+                                    <ul>
+                                        <li><label><input type="checkbox" name="correa" value="si"> Sí</label></li>
+                                        <li><label><input type="checkbox" name="correa" value="no"> No</label></li>
+                                    </ul>
+                                </fieldset>
+                            </li>
+                        </ul>
+                    </section>
+                <section class="bass-products">
+                    <article class="bass-product">
+                        <img src="assets/images/basses/fender.png" alt="Imagen descriptiva" class="newsletter-image">
+                        <section class="bass-product-info">
+                            <h3>Fender American Ultra II Precision Bass UBST</h3>
+                            <p class="bass-rating">
+                                ★★★★★ <span class="nota">(5.0)</span><span class="reviews"> 450</span>
+                            </p>
+                            <ul>
+                                <li><p>Bajo Eléctrico de 4 cuerdas</p></li>
+                                <li><p>Cuerpo de aliso seleccionado</p></li>
+                                <li><p>Color Ultraburst</p></li>
+                                <li><p>Mástil de arce (quartersawn maple) con refuerzos de grafito</p></li>
+                            </ul>
+                        </section>
+                        <section class="bass-product-buy">
+                            <h3>2.449 €</h3>
+                            <div>
+                                <a><i class="head-nav-icon far fa-heart"></i></a>
+                                <a><i class="head-nav-icon fas fa-shopping-cart"></i></a>
+                            </div>
+                        </section>
+                    </article>
+                    <article class="bass-product">
+                        <img src="assets/images/basses/yamaha.png" alt="Imagen descriptiva" class="newsletter-image">
+                        <section class="bass-product-info">
+                            <h3>Yamaha BB734A IDB</h3>
+                            <p class="bass-rating">
+                                ★★★★★ <span class="nota">(5.0)</span><span class="reviews"> 450</span>
+                            </p>
+                            <ul>
+                                <li><p>Bajo eléctrico de 4 cuerdas</p></li>
+                                <li><p>Cuerpo de aliso/arce/aliso</p></li>
+                                <li><p>Color Indigo Blue</p></li>
+                                <li><p>Mástil de arce y caoba de 5 piezas</p></li>
+                            </ul>
+                        </section>
+                        <section class="bass-product-buy">
+                            <h3>1.040 €</h3>
+                            <div>
+                                <a><i class="head-nav-icon far fa-heart"></i></a>
+                                <a><i class="head-nav-icon fas fa-shopping-cart"></i></a>
+                            </div>
+                        </section>
+                    </article>
+                    <article class="bass-product">
+                        <img src="assets/images/basses/fender-custom.png" alt="Imagen descriptiva" class="newsletter-image">
+                        <section class="bass-product-info">
+                            <h3>Fender Custom Shop 1966 Precision Bass JRN ANAT</h3>
+                            <p class="bass-rating">
+                                ★★★★★ <span class="nota">(5.0)</span><span class="reviews"> 450</span>
+                            </p>
+                            <ul>
+                                <li><p>Bajo eléctrico de 4 cuerdas</p></li>
+                                <li><p>Custom Shop Time Machine</p></li>
+                                <li><p>Acabado Journeyman Relic</p></li>
+                                <li><p>Cuerpo de Aliso</p></li>
+                            </ul>
+                        </section>
+                        <section class="bass-product-buy">
+                            <h3>4.945 €</h3>
+                            <div>
+                                <a><i class="head-nav-icon far fa-heart"></i></a>
+                                <a><i class="head-nav-icon fas fa-shopping-cart"></i></a>
+                            </div>
+                        </section>
+                    </article>
+                    <article class="bass-product">
+                        <img src="assets/images/basses/squier.png" alt="Imagen descriptiva" class="newsletter-image">
+                        <section class="bass-product-info">
+                            <h3>Squier FSR Classic Vibe 70 Precision Bass ANT</h3>
+                            <p class="bass-rating">
+                                ★★★★★ <span class="nota">(5.0)</span><span class="reviews"> 450</span>
+                            </p>
+                            <ul>
+                                <li><p>Bajo eléctrico de 4 cuerdas</p></li>
+                                <li><p>Cuerpo de tilo</p></li>
+                                <li><p>Color Antigua</p></li>
+                                <li><p>Mástil de arce </p></li>
+                            </ul>
+                        </section>
+                        <section class="bass-product-buy">
+                            <h3>459 €</h3>
+                            <div>
+                                <a><i class="head-nav-icon far fa-heart"></i></a>
+                                <a><i class="head-nav-icon fas fa-shopping-cart"></i></a>
+                            </div>
+                        </section>
+                    </article>
+                    <article class="bass-product">
+                        <img src="assets/images/basses/cort.png" alt="Imagen descriptiva" class="newsletter-image">
+                        <section class="bass-product-info">
+                            <h3>Cort GB Fusion 4 BB</h3>
+                            <p class="bass-rating">
+                                ★★★★★ <span class="nota">(5.0)</span><span class="reviews"> 450</span>
+                            </p>
+                            <ul>
+                                <li><p>Bajo eléctrico de 4 cuerdas</p></li>
+                                <li><p>Cuerpo de aliso</p></li>
+                                <li><p>Tapa de arce (spalted maple)</p></li>
+                                <li><p>Color Blue Burst</p></li>
+                            </ul>
+                        </section>
+                        <section class="bass-product-buy">
+                            <h3>619 €</h3>
+                            <div>
+                                <a><i class="head-nav-icon far fa-heart"></i></a>
+                                <a><i class="head-nav-icon fas fa-shopping-cart"></i></a>
+                            </div>
+                        </section>
+                    </article>
+                    <article class="bass-product">
+                        <img src="assets/images/basses/sandberg.png" alt="Imagen descriptiva" class="newsletter-image">
+                        <section class="bass-product-info">
+                            <h3>Sandberg California II Central 4 Anthracite</h3>
+                            <p class="bass-rating">
+                                ★★★★★ <span class="nota">(5.0)</span><span class="reviews"> 450</span>
+                            </p>
+                            <ul>
+                                <li><p>Bajo eléctrico de 4 cuerdas</p></li>
+                                <li><p>Cuerpo de aliso</p></li>
+                                <li><p>Color Anthracite</p></li>
+                                <li><p>Mástil de arce</p></li>
+                            </ul>
+                        </section>
+                        <section class="bass-product-buy">
+                            <h3>1.825 €</h3>
+                            <div>
+                                <a><i class="head-nav-icon far fa-heart"></i></a>
+                                <a><i class="head-nav-icon fas fa-shopping-cart"></i></a>
+                            </div>
+                        </section>
+                    </article>
+
+                </section>
+            </div>
+        </main>
+        <footer>
+            <!-- Primera sección -->
+            <section class="newsletter-section">
+                <section class="newsletter-section-container">
+                    <article class="left">
+                        <img src="assets/images/newsletter.png" alt="Imagen descriptiva" class="newsletter-image">
+                        <article class="text-content">
+                            <h3>PitchPerfect Newsletter</h3>
+                            <h4>¡Mantente al tanto de nuestras últimas novedades!</h4>
+                            <ul>
+                                <li>Ofertas Exclusivas</li>
+                                <li>Contenido Exclusivo</li>
+                                <li>Recomendaciones Personalizadas</li>
+                            </ul>
+                        </article>
+                    </article>
+                    <article class="right">
+                        <article class="newsletter-register">
+                            <input type="text" placeholder="Dirección de e-mail">
+                            <button>Regístrate</button>
+                        </article>
+                        <p>Al registrarte, aceptas recibir nuestras novedades, ofertas y actualizaciones por correo electrónico. Puedes cancelar tu suscripción en cualquier momento.</p>
+                    </article>
+                </section>
+            </section>
+
+            <!-- Segunda sección -->
+            <section class="payment-section">
+                <section class="payment-section-container">
+                    <section class="payment-section-left">
+                        <article class="payment-images">
+                            <img src="assets/images/paypal-logo.png" alt="PayPal">
+                            <img src="assets/images/visa-logo.png" alt="Visa">
+                            <img src="assets/images/mastercard-logo.png" alt="Mastercard">
+                        </article>
+                        <p>Aceptamos tarjetas, transferencias y pagos en línea con total seguridad. Compra de forma rápida y protegida.</p>
+                    </section>
+                    <article class="payment-section-center">
+                        <ul>
+                            <li><h2>Servicios</h2></li>
+                            <li><a href="link1.html">Guía de compra</a></li>
+                            <li><a href="link1.html">Reseñas de productos</a></li>
+                            <li><a href="link1.html">Aprende música con PitchPerfect</a></li>
+                            <li><a href="link1.html">Centro de devoluciones</a></li>
+                        </ul>
+                    </article>
+                    <article class="payment-section-right">
+                        <ul>
+                            <li><h2>Comunidad</h2></li>
+                            <li><a href="link1.html">Foro de la comunidad</a></li>
+                            <li><a href="link1.html">Conciertos y eventos</a></li>
+                            <li><a href="link1.html">Consejos de mantenimiento</a></li>
+                            <li><a href="link1.html">¿Te gusta PitchPerfect? Tráe a un amigo</a></li>
+                        </ul>
+                    </article>
+                </section>
+            </section>
+
+            <!-- Tercera sección -->
+            <section class="social-section">
+                <section class="social-section-container">
+                    <article class="social-icons">
+                        <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                            <i class="social-icon fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                            <i class="social-icon fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com" target="_blank" aria-label="YouTube">
+                            <i class="social-icon fa-brands fa-youtube"></i>
+                        </a>
+                        <a href="https://www.pinterest.com" target="_blank" aria-label="Pinterest">
+                            <i class="social-icon fa-brands fa-pinterest"></i>
+                        </a>
+                        <a href="https://www.tiktok.com" target="_blank" aria-label="TikTok">
+                            <i class="social-icon fa-brands fa-tiktok"></i>
+                        </a>
+                    </article>
+                    <nav class="links">
+                        <ul>
+                            <li><a href="link1.html">Acerca de Nosotros</a></li>
+                            <li><a href="link1.html">Términos y Condiciones</a></li>
+                            <li><a href="link1.html">Política de Privacidad</a></li>
+                            <li><a href="link1.html">Política de Cookies</a></li>
+                            <li><a href="link1.html">Preguntas Frecuentes (FAQ)</a></li>
+                            <li><a href="link1.html">Política de Devoluciones</a></li>
+                            <li><a href="link1.html">Envío y Entrega</a></li>
+                            <li><a href="link1.html">Atención al Cliente</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="links">
+                        <ul>
+                            <li><a href="link1.html">Mapa del Sitio</a></li>
+                            <li><a href="link1.html">Programa de Afiliados</a></li>
+                            <li><a href="link1.html">Descuentos y Promociones</a></li>
+                            <li><a href="link1.html">Trabaja con Nosotros</a></li>
+                            <li><a href="link1.html">Blog</a></li>
+                        </ul>
+                    </nav>
+                    <section class="social-section-right">
+                        <section class="app-links">
+                            <a href="https://apps.apple.com" target="_blank">
+                                <img src="assets/images/app-store.png" alt="Nuestra App en el App Store">
+                            </a>
+                            <a href="https://play.google.com" target="_blank">
+                                <img src="assets/images/play-store.png" alt="Nuestra App en Google Play">
+                            </a>
+                        </section>
+                        <section class="copyright">
+                            <span>© 2024 - 2024 Pitch'Up.</span>
+                            <span class="eslogan">Un bastinazo.</span>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </footer>
+</body>
+</html>
