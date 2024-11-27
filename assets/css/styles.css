@@ -846,6 +846,7 @@ article.payment-section-right {
 .app-links {
   display: flex;
   align-self: flex-start;
+  min-width: 250px;
   grid-column: 3; /* Tercera columna para las imágenes de la app en la segunda fila */
   gap: 15px;
 }
@@ -867,6 +868,115 @@ section.copyright {
   font-size: 0.8em;
   font-style: italic;
   font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  /* Ajustes generales */
+  .newsletter-section-container,
+  .payment-section-container,
+  .social-section-container {
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 20px;
+  }
+
+  /* Newsletter */
+
+  .newsletter-register {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .newsletter-register input,
+  .newsletter-register button {
+    width: 100%
+  }
+
+  .left {
+    text-align: center;
+  }
+
+  .left img {
+    display: none;
+  }
+
+  /* Segunda sección (Pagos y Servicios) */
+  .payment-section-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .payment-section-left, .payment-section-right, .payment-section-center {
+    width: 100%;
+  }
+
+  .payment-section-left p {
+    width: 100%;
+  }
+
+  .payment-images {
+    justify-content: center;
+  }
+
+  .payment-section ul {
+
+    padding: 0; /* Elimina relleno innecesario */
+  }
+
+  .payment-section ul li {
+    font-size: 0.9em; /* Ajusta el tamaño del texto */
+    margin: 5px 0; /* Espaciado entre elementos */
+  }
+
+  /* Tercera sección (Social) */
+  .social-section-container {
+      display: flex;
+      flex-direction: column;  /* Asegura que los elementos estén en columna */
+      align-items: center;  /* Centra todos los elementos (iconos, listas, etc.) */
+      gap: 20px; /* Espaciado entre bloques */
+  }
+
+  .social-section-right {
+      order: 3; /* Mueve este bloque al final */
+      display: flex;
+      flex-direction: column; /* Organiza los elementos en columna */
+      align-items: center; /* Alinea todo al centro */
+      gap: 10px;
+  }
+
+  .social-icons {
+      order: 1; /* Mantiene los íconos arriba */
+      display: flex;
+      justify-content: center;  /* Centra los íconos */
+      gap: 20px; /* Espaciado entre íconos */
+  }
+
+  .links {
+      order: 2; /* Mantiene las listas de enlaces en su posición */
+      display: flex; /* Muestra las listas una al lado de otra */
+      justify-content: center; /* Centra las listas */
+      gap: 30px; /* Espaciado entre las dos listas */
+      width: 100%; /* Asegura que las listas ocupen todo el ancho disponible */
+  }
+
+  .links ul {
+      padding: 0; /* Elimina el padding */
+      margin: 0; /* Elimina el margen por defecto */
+  }
+
+  .links ul li {
+    display: flex;
+    justify-content: center;
+  }
+
+  .copyright {
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
+  }
 }
 
 /* ---------- */
@@ -1272,6 +1382,10 @@ main.login div section img:hover {
   height: auto;
 }
 
+.category-home-bass {
+  background-image: url(../images/cat-home/cat-bass-home-expanded.png)
+}
+
 .main-bass-container {
   width: 100%;
   height: auto;
@@ -1283,9 +1397,10 @@ main.login div section img:hover {
 
 /* General styles for filters */
 .filters {
+  height: 20%;
   padding: 20px;
   border-radius: 5px;
-  background-color: rgb(238, 238, 238)
+  border: solid 2px rgb(234, 234, 234);
 }
 
 .filters h2 {
@@ -1372,7 +1487,9 @@ label[for="price-range"] {
   }
 }
 
+
 .bass-products {
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -1383,15 +1500,19 @@ label[for="price-range"] {
   display: flex;
   padding: 20px;
   gap: 20px;
+  border: solid 2px rgb(243, 243, 243);
   border-radius: 5px;
-  background-color: rgb(238, 238, 238)
+  background-color: rgb(243, 243, 243)
+}
+
+.bass-product:hover {
+  background-color: white
 }
 
 
 .bass-product img {
   width: 20%;
   object-fit: cover;
-  background-color: rgb(244, 244, 244);
   padding: 5px;
 }
 
@@ -1399,11 +1520,12 @@ label[for="price-range"] {
   flex: 2;
   display: flex;
   flex-direction: column;
+  gap: 5px;
 }
 
 .bass-product-info h3 {
-  font-size: 1.3em;
-  font-weight: bold;
+  font-size: 1.5em;
+  font-weight: 500;
 }
 
 .bass-rating {
@@ -1428,11 +1550,47 @@ label[for="price-range"] {
 }
 
 .bass-product-buy h3 {
-  font-size: 1.5em;
+  font-size: 1.6em;
   font-weight: bold;
+}
+
+.bass-product-buy a {
+  font-size: 1.4em;;
 }
 
 .bass-product ul {
   list-style: disc;
   margin-left: 15px;
+}
+
+.bass-product ul li{
+  margin-bottom: 10px;
+}
+
+@media (max-width: 920px) {
+  .bass-product {
+    min-height: 150px; /* Reduce la altura mínima */
+    padding: 10px; /* Reduce el padding interno */
+    gap: 10px; /* Reduce el espacio entre elementos */
+  }
+
+  .bass-product-info h3 {
+    font-size: 1em; /* Ajusta el tamaño del título */
+  }
+
+  .bass-rating {
+    font-size: 0.9em; /* Reduce el tamaño de la valoración */
+  }
+
+  .bass-product ul {
+    font-size: 0.9em; /* Reduce el tamaño del texto en la lista */
+  }
+
+  .bass-product-buy {
+    flex: 0 0 100px; /* Reduce el espacio reservado para esta sección */
+  }
+
+  .bass-product-buy h3 {
+    font-size: 1.2em; /* Ajusta el tamaño del precio */
+  }
 }
