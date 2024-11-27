@@ -1567,6 +1567,10 @@ label[for="price-range"] {
   margin-bottom: 10px;
 }
 
+.fav-buy a i {
+  font-size: 1.6rem
+}
+
 @media (max-width: 920px) {
   .bass-product {
     min-height: 150px; /* Reduce la altura mínima */
@@ -1592,5 +1596,9 @@ label[for="price-range"] {
 
   .bass-product-buy h3 {
     font-size: 1.2em; /* Ajusta el tamaño del precio */
+  }
+
+  .fav-buy a i {
+    font-size: 1.3rem
   }
 }
