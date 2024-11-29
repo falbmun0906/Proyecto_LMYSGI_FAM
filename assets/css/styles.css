@@ -43,6 +43,9 @@ a {
   color: inherit;
 }
 
+.logo2 {
+  display: none;
+}
 
 /* --------------------- */
 /* Stickyness del Header */
@@ -219,6 +222,10 @@ section.header-bottom {
     flex-direction: column;
   }
 
+  .center {
+    gap: 5px;
+  }
+
   header nav.right {
     margin-right: 0px;
     justify-content: center;
@@ -226,7 +233,7 @@ section.header-bottom {
 
   nav.right ul.bottom {
     display: flex;
-    gap: 30px;
+    gap: 15px;
   }
 
   nav.right ul.bottom li {
@@ -239,6 +246,26 @@ section.header-bottom {
 
   nav.left {
     display: none;
+  }
+
+  img.logo2 {
+    display: flex;
+  }
+
+  .logo1 {
+    display: none
+  }
+
+  nav.center .logo img {
+    width: 150px;
+    height: auto;
+  }
+
+  nav.center input[type="search"] {
+    min-width: 250px;
+    padding: 10px;
+    height: 5px;
+    font-size: 0.8em
   }
 }
 
