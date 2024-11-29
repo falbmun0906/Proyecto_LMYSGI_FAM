@@ -8,6 +8,7 @@
   box-sizing: border-box;
   font-family: 'Montserrat', Helvetica, sans-serif, sans-serif, sans-serif;
   font-weight: 400; /* Aplica un peso de fuente ligero */
+
 }
 
 *::selection {
@@ -54,6 +55,7 @@ header.pages {
   display: flex;
   align-items: center;
   flex-direction: column;
+  overflow: hidden;
 }
 
 /* ---------- */
@@ -125,6 +127,7 @@ nav.center {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  margin-bottom:5px;
 }
 
 nav.center .logo img{
@@ -168,7 +171,7 @@ nav.right ul.bottom {
 
 nav.right ul.top li,
 nav.right ul.bottom li {
-  margin-left: 15; /* Espacio entre los botones */
+  margin-left: 15px; /* Espacio entre los botones */
 }
 
 nav.right ul.bottom {
@@ -1079,7 +1082,6 @@ main.login {
 .main-container-login {
   display: flex;
   flex-direction: row; /* Imagen a la derecha y formulario a la izquierda */
-  align-items: center; /* Centra verticalmente el contenido */
   justify-content: space-between; /* Espaciado entre el formulario y la imagen */
   width: 800px; /* Tamaño fijo para el contenedor */
   height: 630px; /* Tamaño fijo */
@@ -1603,48 +1605,29 @@ label[for="price-range"] {
   }
 }
 
+@media (max-width: 720px) {
+  .bass-product {
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 1.3em;
+  }
+
+  .bass-product-info ul {
+    display: none;
+  }
+
+  .bass-product img {
+    width:50%;
+    margin: 0 300px;
+    margin-bottom: 20px;
+  }
+
+  .bass-product-info {
+    width: 100%;
+  }
+}
+
 /* ---------- */
 /* PÁGINA TRES */
 /* ---------- */
 
-.main-product-container {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 0 10vw;
-  background-color:
-}
-
-.product-options {
-  display: flex;
-  gap: 10px;
-}
-
-.product-options-left {
-  width: 50%;
-}
-
-.product-options-left h1 {
-  width: 100%;
-}
-
-.product-options-left span {
-  display: inline-block;
-  width: 100%;
-}
-
-.all-product-images {
-  display: flex;
-}
-
-.product-options-right {
-  width: 50%;
-}
-
-.product-brand {
-  width: 40;
-}
-
-.main-product-image {
-  width: 100px;
-}
