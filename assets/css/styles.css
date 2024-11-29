@@ -1602,3 +1602,49 @@ label[for="price-range"] {
     font-size: 1.3rem
   }
 }
+
+/* ---------- */
+/* PÁGINA TRES */
+/* ---------- */
+
+.main-product-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 10vw;
+  background-color:
+}
+
+.product-options {
+  display: flex;
+  gap: 10px;
+}
+
+.product-options-left {
+  width: 50%;
+}
+
+.product-options-left h1 {
+  width: 100%;
+}
+
+.product-options-left span {
+  display: inline-block;
+  width: 100%;
+}
+
+.all-product-images {
+  display: flex;
+}
+
+.product-options-right {
+  width: 50%;
+}
+
+.product-brand {
+  width: 40;
+}
+
+.main-product-image {
+  width: 100px;
+}
