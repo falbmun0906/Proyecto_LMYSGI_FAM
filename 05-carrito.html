@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es_ES">
+<head>
+    <!-- Meta información para el navegador y SEO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tienda en línea de instrumentos musicales">
+    <meta name="keywords" content="instrumentos musicales, guitarras, teclados, percusión, tienda online">
+    <meta name="author" content="Francisco Alba Muñoz">
+
+    <!-- Para asegurar compatibilidad con navegadores antiguos -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Título de la página -->
+    <title>PitchUp</title>
+
+    <!-- Fuentes accesibles -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> <!-- Fuentes de Google para mejorar la legibilidad -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Link a los archivos de estilo CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <!-- Icono de la página (favicon) PENDIENTE --> 
+    <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon"> <!-- Icono que aparece en la pestaña del navegador -->
+
+    <!-- Accesibilidad -->
+    <script src="https://kit.fontawesome.com/218b422903.js" crossorigin="anonymous"></script>
+
+
+    <!-- Prevenir la escala de la página cuando se usa en dispositivos móviles -->
+    <meta name="robots" content="index, follow"> <!-- Permite a los motores de búsqueda indexar el sitio -->
+</head>
+<body>
+    <header class="pages">
+        <section class="header-top">
+            <nav class="left">
+                <ul>
+                    <li><a href="#servicio">Servicio</a></li>
+                    <li><span>·</span></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><span>·</span></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                </ul>
+            </nav>
+            <nav class="center">
+                <a href="index.html" class="logo">
+                    <img class="logo1" src="assets/images/pitch-up-logo.png" alt="Logo" />
+                    <img class="logo2" src="assets/images/pitch-up-logo2.png" alt="Logo" />
+                </a>
+                <input type="search" placeholder="Buscar...">
+            </nav>
+            <nav class="right">
+                <ul class="top">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                    <li><a class="language"><i class="head-nav-icon fas fa-language"></i></a></li>
+                </ul>
+                <ul class="bottom">
+                    <li><a><i class="head-nav-icon fa-solid fa-euro-sign"></i></a></li>
+                    <li><a href="07-iniciodesesion.html"><i class="head-nav-icon far fa-user-circle"></i></a></li>
+                    <li><a><i class="head-nav-icon far fa-heart"></i></a></li>
+                    <li><a><i class="head-nav-icon fas fa-shopping-cart"></i></a></li>
+                </ul>
+            </nav>
+        </section>
+        <section class="header-bottom">
+            <nav>
+                <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+                <label for="menu-toggle" class="menu-icon">&#9776;</label>
+                <ul class="menu">
+                    <li><a href="01-guitarrasybajos.html">Guitarras/Bajos</a></li>
+                    <li><a href="#baterias">Baterías</a></li>
+                    <li><a href="#teclados">Teclados</a></li>
+                    <li><a href="#estudio">Estudio</a></li>
+                    <li><a href="#software">Software</a></li>
+                    <li><a href="#viento">Viento</a></li>
+                    <li><a href="#micros">Micros</a></li>
+                    <li><a href="#tradicional">Tradicional</a></li>
+                    <li><a href="#cables">Cables</a></li>
+                    <li><a href="#accesorios">Accesorios</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main>
+    <div class="main-cart-container">
+        <h1>Su cesta de la compra</h1>
+        <article class="cart-product">
+            <img src="./assets/images/cart/yamaha.png">
+            <section class="cart-main">
+                <h3>Yamaha P-225 B</h3>
+                <p class="stock">En Stock</p>
+                <ul class="cart-buttons">
+                    <li><a><i class="fa-solid fa-trash-can"></i></a></li>
+                    <li>
+                        <a href="#" class="save-for-later">
+                        <i class="head-nav-icon far fa-heart"></i>
+                        Guardar para más tarde
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="product-total">
+                <input type="number" min="1" value="1" aria-label="Cantidad">
+                <h2>569.95 €</h2>
+            </section>
+        </article>
+        <article class="cart-product">
+            <img src="./assets/images/cart/yamaha2.png">
+            <section class="cart-main">
+                <h3>Yamaha HS 5</h3>
+                <p class="stock">En Stock</p>
+                <ul class="cart-buttons">
+                    <li><a><i class="fa-solid fa-trash-can"></i></a></li>
+                    <li>
+                        <a href="#" class="save-for-later">
+                        <i class="head-nav-icon far fa-heart"></i>
+                        Guardar para más tarde
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="product-total">
+                <input type="number" min="1" value="2" aria-label="Cantidad">
+                <h2>232 €</h2>
+            </section>
+        </article>
+        <article class="cart-product">
+            <img src="./assets/images/cart/m-audio.png">
+            <section class="cart-main">
+                <h3>M-Audio SP-2</h3>
+                <p class="stock">En Stock</p>
+                <ul class="cart-buttons">
+                    <li><a><i class="fa-solid fa-trash-can"></i></a></li>
+                    <li>
+                        <a href="#" class="save-for-later">
+                        <i class="head-nav-icon far fa-heart"></i>
+                        Guardar para más tarde
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="product-total">
+                <input type="number" min="1" value="1" aria-label="Cantidad">
+                <h2>17.90 €</h2>
+            </section>
+        </article>
+        <article class="cart-product">
+            <img src="./assets/images/cart/audibax.png">
+            <section class="cart-main">
+                <h3>Audibax KB100B</h3>
+                <p class="stock">En Stock</p>
+                <ul class="cart-buttons">
+                    <li><a><i class="fa-solid fa-trash-can"></i></a></li>
+                    <li>
+                        <a href="#" class="save-for-later">
+                        <i class="head-nav-icon far fa-heart"></i>
+                        Guardar para más tarde
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="product-total">
+                <input type="number" min="1" value="1" aria-label="Cantidad">
+                <h2>26.49 €</h2>
+            </section>
+        </article>
+        <section class="cart-payment">
+            <article class="payment-images cart-payment-methods">
+                <img src="assets/images/paypal-logo.png" alt="PayPal">
+                <img src="assets/images/visa-logo.png" alt="Visa">
+                <img src="assets/images/mastercard-logo.png" alt="Mastercard">
+            </article>
+            <article class="pay">
+                <h2>Subtotal: 849.34 €</h2>
+                <button type="button">Pagar</button>
+            </article>
+        </section>
+        <section class="purchase-information">
+            <h2>Información de la compra</h2>
+            <details>
+              <summary>Métodos de pago</summary>
+              <p>En nuestra tienda online aceptamos diversos métodos de pago: tarjetas de crédito o débito (Visa, Mastercard, American Express), PayPal y Bizum. Todas las transacciones están protegidas con tecnología de encriptación avanzada para garantizar la máxima seguridad de tus datos.</p>
+            </details>
+            <details>
+              <summary>Condiciones de envío</summary>
+              <p>Realizamos envíos a toda España, incluyendo las Islas Canarias, Baleares, Ceuta y Melilla. Ofrecemos opciones de envío estándar y exprés, y te proporcionamos un número de seguimiento para que puedas consultar el estado de tu pedido. Los costos de envío varían según el tamaño y peso del paquete, pero ocasionalmente ofrecemos promociones de envío gratuito.</p>
+            </details>
+            <details>
+              <summary>Garantía</summary>
+              <p>Todos nuestros productos cuentan con una garantía que cubre defectos de fabricación. La duración y condiciones varían según el fabricante, pero generalmente oscilan entre 1 y 2 años. En caso de problemas, gestionaremos la reparación o sustitución del producto si es necesario, siempre que el daño no sea causado por un uso inadecuado. Guarda la factura de compra, ya que es indispensable para cualquier trámite relacionado con la garantía.</p>
+            </details>
+          </section>
+          <section class="recommended">
+            <h2>También te puede interesar...</h2>
+            <section class="featured">
+                <article class="product">
+                    <img src="assets/images/cart/recommended/bag.png" alt="Nombre del producto 1">
+                    <p class="rating">
+                        ★★★★★ <span class="nota">(5.0)</span><span class="reviews"> 6</span>
+                    </p>
+                    <a href="#">PROBAGS NP32-20-6</a>
+                    <p class="price">68.30 €</p>
+                </article>
+                <article class="product">
+                    <img src="assets/images/cart/recommended/akg.png" alt="Nombre del producto 2">
+                    <p class="rating">
+                        ★★★★☆ <span class="nota">(4.1)</span><span class="reviews"> 26</span>
+                    </p>
+                    <a href="#">AKG K-72 AURICULAR</a>
+                    <p class="price">51.50 €</p>
+                </article>
+                <article class="product">
+                    <img src="assets/images/cart/recommended/roland.png" alt="Nombre del producto 3">
+                    <p class="rating">
+                        ★★★★★ <span class="nota">(4.9)</span><span class="reviews"> 9</span>
+                    </p>
+                    <a href="#">ROLAND JUPITER XM</a>
+                    <p class="price">1485.00 €</p>
+                </article>
+                <article class="product">
+                    <img src="assets/images/cart/recommended/samson.png" alt="Nombre del producto 4">
+                    <p class="rating">
+                        ★★★★☆ <span class="nota">(3.9)</span><span class="reviews"> 3</span>
+                    </p>
+                    <a href="#">SAMSON LM10</a>
+                    <p class="price">103.00 €</p>
+                </article>
+          </section>
+    </div>
+</main>
+<footer>
+    <!-- Primera sección -->
+    <section class="newsletter-section">
+        <section class="newsletter-section-container">
+            <article class="left">
+                <img src="assets/images/newsletter.png" alt="Imagen descriptiva" class="newsletter-image">
+                <article class="text-content">
+                    <h3>PitchPerfect Newsletter</h3>
+                    <h4>¡Mantente al tanto de nuestras últimas novedades!</h4>
+                    <ul>
+                        <li>Ofertas Exclusivas</li>
+                        <li>Contenido Exclusivo</li>
+                        <li>Recomendaciones Personalizadas</li>
+                    </ul>
+                </article>
+            </article>
+            <article class="right">
+                <article class="newsletter-register">
+                    <input type="text" placeholder="Dirección de e-mail">
+                    <button>Regístrate</button>
+                </article>
+                <p>Al registrarte, aceptas recibir nuestras novedades, ofertas y actualizaciones por correo electrónico. Puedes cancelar tu suscripción en cualquier momento.</p>
+            </article>
+        </section>
+    </section>
+
+    <!-- Segunda sección -->
+    <section class="payment-section">
+        <section class="payment-section-container">
+            <section class="payment-section-left">
+                <article class="payment-images">
+                    <img src="assets/images/paypal-logo.png" alt="PayPal">
+                    <img src="assets/images/visa-logo.png" alt="Visa">
+                    <img src="assets/images/mastercard-logo.png" alt="Mastercard">
+                </article>
+                <p>Aceptamos tarjetas, transferencias y pagos en línea con total seguridad. Compra de forma rápida y protegida.</p>
+            </section>
+            <article class="payment-section-center">
+                <ul>
+                    <li><h2>Servicios</h2></li>
+                    <li><a href="link1.html">Guía de compra</a></li>
+                    <li><a href="link1.html">Reseñas de productos</a></li>
+                    <li><a href="link1.html">Aprende música con PitchPerfect</a></li>
+                    <li><a href="link1.html">Centro de devoluciones</a></li>
+                </ul>
+            </article>
+            <article class="payment-section-right">
+                <ul>
+                    <li><h2>Comunidad</h2></li>
+                    <li><a href="link1.html">Foro de la comunidad</a></li>
+                    <li><a href="link1.html">Conciertos y eventos</a></li>
+                    <li><a href="link1.html">Consejos de mantenimiento</a></li>
+                    <li><a href="link1.html">¿Te gusta PitchPerfect? Tráe a un amigo</a></li>
+                </ul>
+            </article>
+        </section>
+    </section>
+
+    <!-- Tercera sección -->
+    <section class="social-section">
+        <section class="social-section-container">
+            <article class="social-icons">
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                    <i class="social-icon fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                    <i class="social-icon fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com" target="_blank" aria-label="YouTube">
+                    <i class="social-icon fa-brands fa-youtube"></i>
+                </a>
+                <a href="https://www.pinterest.com" target="_blank" aria-label="Pinterest">
+                    <i class="social-icon fa-brands fa-pinterest"></i>
+                </a>
+                <a href="https://www.tiktok.com" target="_blank" aria-label="TikTok">
+                    <i class="social-icon fa-brands fa-tiktok"></i>
+                </a>
+            </article>
+            <nav class="links">
+                <ul>
+                    <li><a href="link1.html">Acerca de Nosotros</a></li>
+                    <li><a href="link1.html">Términos y Condiciones</a></li>
+                    <li><a href="link1.html">Política de Privacidad</a></li>
+                    <li><a href="link1.html">Política de Cookies</a></li>
+                    <li><a href="link1.html">Preguntas Frecuentes (FAQ)</a></li>
+                    <li><a href="link1.html">Política de Devoluciones</a></li>
+                    <li><a href="link1.html">Envío y Entrega</a></li>
+                    <li><a href="link1.html">Atención al Cliente</a></li>
+                </ul>
+            </nav>
+            <nav class="links">
+                <ul>
+                    <li><a href="link1.html">Mapa del Sitio</a></li>
+                    <li><a href="link1.html">Programa de Afiliados</a></li>
+                    <li><a href="link1.html">Descuentos y Promociones</a></li>
+                    <li><a href="link1.html">Trabaja con Nosotros</a></li>
+                    <li><a href="link1.html">Blog</a></li>
+                </ul>
+            </nav>
+            <section class="social-section-right">
+                <section class="app-links">
+                    <a href="https://apps.apple.com" target="_blank">
+                        <img src="assets/images/app-store.png" alt="Nuestra App en el App Store">
+                    </a>
+                    <a href="https://play.google.com" target="_blank">
+                        <img src="assets/images/play-store.png" alt="Nuestra App en Google Play">
+                    </a>
+                </section>
+                <section class="copyright">
+                    <span>© 2024 - 2024 Pitch'Up.</span>
+                    <span class="eslogan">Un bastinazo.</span>
+                </section>
+            </section>
+        </section>
+    </section>
+</footer>
+</body>
+</html>
