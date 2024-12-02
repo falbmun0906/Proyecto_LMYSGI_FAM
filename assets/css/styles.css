@@ -160,13 +160,16 @@ nav.right ul {
   margin: 0; /* Sin margen */
 }
 
-nav.right ul.top,
+nav.right div.top,
 nav.right ul.bottom {
   display: flex; /* Mostrar elementos en fila */
   align-items: center;
 }
 
-nav.right ul.top li,
+nav.right div.top {
+  gap: 15px;
+}
+
 nav.right ul.bottom li {
   margin-left: 15px; /* Espacio entre los botones */
 }
@@ -240,7 +243,7 @@ section.header-bottom {
     margin-left: 0px;
   }
 
-  header nav.right ul.top {
+  header nav.right div.top {
     display: none;
   }
 
@@ -983,7 +986,6 @@ section.copyright {
   }
 
   .payment-section ul {
-
     padding: 0; /* Elimina relleno innecesario */
   }
 
