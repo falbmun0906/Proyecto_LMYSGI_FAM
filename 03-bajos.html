@@ -110,126 +110,124 @@
                         <label for="price-max">Precio Máximo</label>
                         <input type="number" id="price-max" name="price-max" placeholder="Máx" min="0">
                     </li>
-                    <ul>
-                        <!-- Fabricantes -->
-                        <li class="filter-item">
-                            <fieldset>
-                                <legend>Fabricantes</legend>
-                                <ul>
-                                    <li><label><input type="checkbox" name="fabricantes" value="warwick">Warwick (8)</label></li>
-                                    <li><label><input type="checkbox" name="fabricantes" value="ibanez">Ibanez (15)</label></li>
-                                    <li><label><input type="checkbox" name="fabricantes" value="cort">Cort (10)</label></li>
-                                    <li><label><input type="checkbox" name="fabricantes" value="fender">Fender (12)</label></li>
-                                    <li><label><input type="checkbox" name="fabricantes" value="music-man">Music Man (7)</label></li>
-                                    <li><label><input type="checkbox" name="fabricantes" value="yamaha">Yamaha (9)</label></li>
-                                    <li><label><input type="checkbox" name="fabricantes" value="samberg">Samberg (5)</label></li>
-                                    <li><label><input type="checkbox" name="fabricantes" value="spector">Spector (4)</label></li>
-                                    <li><label><input type="checkbox" name="fabricantes" value="epiphone">Epiphone (3)</label></li>
-                                    <li><label><input type="checkbox" name="fabricantes" value="squier">Squier (6)</label></li>
-                                </ul>
-                            </fieldset>
-                        </li>
+                    <!-- Fabricantes -->
+                    <li class="filter-item manufacturer">
+                        <fieldset>
+                            <legend>Fabricantes</legend>
+                            <ul>
+                                <li><label><input type="checkbox" name="fabricantes" value="warwick">Warwick (8)</label></li>
+                                <li><label><input type="checkbox" name="fabricantes" value="ibanez">Ibanez (15)</label></li>
+                                <li><label><input type="checkbox" name="fabricantes" value="cort">Cort (10)</label></li>
+                                <li><label><input type="checkbox" name="fabricantes" value="fender">Fender (12)</label></li>
+                                <li><label><input type="checkbox" name="fabricantes" value="music-man">Music Man (7)</label></li>
+                                <li><label><input type="checkbox" name="fabricantes" value="yamaha">Yamaha (9)</label></li>
+                                <li><label><input type="checkbox" name="fabricantes" value="samberg">Samberg (5)</label></li>
+                                <li><label><input type="checkbox" name="fabricantes" value="spector">Spector (4)</label></li>
+                                <li><label><input type="checkbox" name="fabricantes" value="epiphone">Epiphone (3)</label></li>
+                                <li><label><input type="checkbox" name="fabricantes" value="squier">Squier (6)</label></li>
+                            </ul>
+                        </fieldset>
+                    </li>
 
-                        <!-- Reseñas -->
-                        <li class="filter-item">
-                            <fieldset>
-                                <legend>Reseñas</legend>
-                                <ul>
-                                    <li><label><input type="checkbox" name="rating" value="3-stars"><span class="rating">★★★☆☆</span></label></li>
-                                    <li><label><input type="checkbox" name="rating" value="4-stars"><span class="rating">★★★★☆</span></label></li>
-                                    <li><label><input type="checkbox" name="rating" value="5-stars"><span class="rating">★★★★★</span></label></li>
-                                </ul>
-                            </fieldset>
-                        </li>
-                    
-                        <!-- Disponibilidad -->
-                        <li class="filter-item">
-                            <fieldset>
-                                <legend>Disponibilidad</legend>
-                                <ul>
-                                    <li><label><input type="checkbox" name="disponibilidad" value="en-stock">En stock</label></li>
-                                    <li><label><input type="checkbox" name="disponibilidad" value="bajo-pedido">Bajo pedido</label></li>
-                                </ul>
-                            </fieldset>
-                        </li>
-                    
-                        <!-- Color -->
-                        <li class="filter-item">
-                            <fieldset>
-                                <legend>Color</legend>
-                                <ul>
-                                    <li><label><input type="checkbox" name="color" value="black">Negro (20)</label></li>
-                                    <li><label><input type="checkbox" name="color" value="white">Blanco (14)</label></li>
-                                    <li><label><input type="checkbox" name="color" value="red">Rojo (10)</label></li>
-                                    <li><label><input type="checkbox" name="color" value="blue">Azul (9)</label></li>
-                                    <li><label><input type="checkbox" name="color" value="sunburst">Sunburst (15)</label></li>
-                                    <li><label><input type="checkbox" name="color" value="natural">Natural (7)</label></li>
-                                    <li><label><input type="checkbox" name="color" value="metallic-gray">Gris metálico (3)</label></li>
-                                    <li><label><input type="checkbox" name="color" value="olive-green">Verde oliva (1)</label></li>
-                                </ul>
-                            </fieldset>
-                        </li>
-                    
-                        <!-- Forma -->
-                        <li class="filter-item">
-                            <fieldset>
-                                <legend>Cuerpo</legend>
-                                <ul>
-                                    <li><label><input type="checkbox" name="cuerpo" value="poplar">Álamo</label></li>
-                                    <li><label><input type="checkbox" name="cuerpo" value="alder">Aliso</label></li>
-                                    <li><label><input type="checkbox" name="cuerpo" value="Ash">Fresno</label></li>
-                                    <li><label><input type="checkbox" name="cuerpo" value="mahogany">Caoba</label></li>
-                                    <li><label><input type="checkbox" name="cuerpo" value="solid-wood">Madera sólida</label></li>
-                                    <li><label><input type="checkbox" name="cuerpo" value="laminated-wood">Madera laminada</label></li>
-                                </ul>
-                            </fieldset>
-                        </li>
-                    
-                        <!-- Configuración de pastillas -->
-                        <li class="filter-item">
-                            <fieldset>
-                                <legend>Configuración de pastillas</legend>
-                                <ul>
-                                    <li><label><input type="checkbox" name="pastillas" value="p">P</label></li>
-                                    <li><label><input type="checkbox" name="pastillas" value="j">J</label></li>
-                                    <li><label><input type="checkbox" name="pastillas" value="pj">PJ</label></li>
-                                    <li><label><input type="checkbox" name="pastillas" value="hh">HH</label></li>
-                                    <li><label><input type="checkbox" name="pastillas" value="h">H</label></li>
-                                    <li><label><input type="checkbox" name="pastillas" value="soapbar">Soapbar</label></li>
-                                    <li><label><input type="checkbox" name="pastillas" value="mm">MM</label></li>
-                                    <li><label><input type="checkbox" name="pastillas" value="hss">HSS</label></li>
-                                    <li><label><input type="checkbox" name="pastillas" value="triple-coil">Triple Coil</label></li>
-                                </ul>
-                            </fieldset>
-                        </li>
-                    
-                        <!-- Incluye maleta -->
-                        <li class="filter-item">
-                            <fieldset>
-                                <legend>Incluye maleta</legend>
-                                <ul>
-                                    <li><label><input type="checkbox" name="maleta" value="si"> Sí</label></li>
-                                    <li><label><input type="checkbox" name="maleta" value="no"> No</label></li>
-                                </ul>
-                            </fieldset>
-                        </li>
-                    
-                        <!-- Incluye correa -->
-                        <li class="filter-item">
-                            <fieldset>
-                                <legend>Incluye correa</legend>
-                                <ul>
-                                    <li><label><input type="checkbox" name="correa" value="si"> Sí</label></li>
-                                    <li><label><input type="checkbox" name="correa" value="no"> No</label></li>
-                                </ul>
-                            </fieldset>
-                        </li>
-                    </ul>
+                    <!-- Reseñas -->
+                    <li class="filter-item">
+                        <fieldset>
+                            <legend>Reseñas</legend>
+                            <ul>
+                                <li><label><input type="checkbox" name="rating" value="3-stars"><span class="rating">★★★☆☆</span></label></li>
+                                <li><label><input type="checkbox" name="rating" value="4-stars"><span class="rating">★★★★☆</span></label></li>
+                                <li><label><input type="checkbox" name="rating" value="5-stars"><span class="rating">★★★★★</span></label></li>
+                            </ul>
+                        </fieldset>
+                    </li>
+                
+                    <!-- Disponibilidad -->
+                    <li class="filter-item">
+                        <fieldset>
+                            <legend>Disponibilidad</legend>
+                            <ul>
+                                <li><label><input type="checkbox" name="disponibilidad" value="en-stock">En stock</label></li>
+                                <li><label><input type="checkbox" name="disponibilidad" value="bajo-pedido">Bajo pedido</label></li>
+                            </ul>
+                        </fieldset>
+                    </li>
+                
+                    <!-- Color -->
+                    <li class="filter-item">
+                        <fieldset>
+                            <legend>Color</legend>
+                            <ul>
+                                <li><label><input type="checkbox" name="color" value="black">Negro (20)</label></li>
+                                <li><label><input type="checkbox" name="color" value="white">Blanco (14)</label></li>
+                                <li><label><input type="checkbox" name="color" value="red">Rojo (10)</label></li>
+                                <li><label><input type="checkbox" name="color" value="blue">Azul (9)</label></li>
+                                <li><label><input type="checkbox" name="color" value="sunburst">Sunburst (15)</label></li>
+                                <li><label><input type="checkbox" name="color" value="natural">Natural (7)</label></li>
+                                <li><label><input type="checkbox" name="color" value="metallic-gray">Gris metálico (3)</label></li>
+                                <li><label><input type="checkbox" name="color" value="olive-green">Verde oliva (1)</label></li>
+                            </ul>
+                        </fieldset>
+                    </li>
+                
+                    <!-- Forma -->
+                    <li class="filter-item">
+                        <fieldset>
+                            <legend>Cuerpo</legend>
+                            <ul>
+                                <li><label><input type="checkbox" name="cuerpo" value="poplar">Álamo</label></li>
+                                <li><label><input type="checkbox" name="cuerpo" value="alder">Aliso</label></li>
+                                <li><label><input type="checkbox" name="cuerpo" value="Ash">Fresno</label></li>
+                                <li><label><input type="checkbox" name="cuerpo" value="mahogany">Caoba</label></li>
+                                <li><label><input type="checkbox" name="cuerpo" value="solid-wood">Madera sólida</label></li>
+                                <li><label><input type="checkbox" name="cuerpo" value="laminated-wood">Madera laminada</label></li>
+                            </ul>
+                        </fieldset>
+                    </li>
+                
+                    <!-- Configuración de pastillas -->
+                    <li class="filter-item">
+                        <fieldset>
+                            <legend>Configuración de pastillas</legend>
+                            <ul>
+                                <li><label><input type="checkbox" name="pastillas" value="p">P</label></li>
+                                <li><label><input type="checkbox" name="pastillas" value="j">J</label></li>
+                                <li><label><input type="checkbox" name="pastillas" value="pj">PJ</label></li>
+                                <li><label><input type="checkbox" name="pastillas" value="hh">HH</label></li>
+                                <li><label><input type="checkbox" name="pastillas" value="h">H</label></li>
+                                <li><label><input type="checkbox" name="pastillas" value="soapbar">Soapbar</label></li>
+                                <li><label><input type="checkbox" name="pastillas" value="mm">MM</label></li>
+                                <li><label><input type="checkbox" name="pastillas" value="hss">HSS</label></li>
+                                <li><label><input type="checkbox" name="pastillas" value="triple-coil">Triple Coil</label></li>
+                            </ul>
+                        </fieldset>
+                    </li>
+
+                    <!-- Incluye maleta -->
+                    <li class="filter-item">
+                        <fieldset>
+                            <legend>Incluye maleta</legend>
+                            <ul>
+                                <li><label><input type="checkbox" name="maleta" value="si"> Sí</label></li>
+                                <li><label><input type="checkbox" name="maleta" value="no"> No</label></li>
+                            </ul>
+                        </fieldset>
+                    </li>
+                
+                    <!-- Incluye correa -->
+                    <li class="filter-item">
+                        <fieldset>
+                            <legend>Incluye correa</legend>
+                            <ul>
+                                <li><label><input type="checkbox" name="correa" value="si"> Sí</label></li>
+                                <li><label><input type="checkbox" name="correa" value="no"> No</label></li>
+                            </ul>
+                        </fieldset>
+                    </li>
                 </ul>
             </section>
             <section class="bass-products">
                 <article class="bass-product">
-                    <img src="assets/images/basses/fender.png" alt="Imagen descriptiva" class="newsletter-image">
+                    <img src="assets/images/basses/fender.png" alt="Imagen de sobre (Newsletter)" class="newsletter-image">
                     <section class="bass-product-info">
                         <a href="04-producto.html">
                             <h3>Fender American Ultra II Precision Bass UBST</h3>

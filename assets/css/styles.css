@@ -114,9 +114,7 @@ nav.left ul li {
 }
 
 nav.left ul li a {
-  text-decoration: none; /* Sin subrayado */
-  font-weight: none; /* Negrita */
-  font-size: 1.1em;
+  font-size: 1.0rem;
   color: rgb(42, 42, 42)
 }
 
@@ -152,7 +150,7 @@ nav.center input[type="search"] {
   width: 25vw; /* Ancho del input */
   height: 35px; /* Altura del input */
   min-width: 350px;
-  font-size: 1.2em; /* Tamaño de la fuente */
+  font-size: 1.2rem; /* Tamaño de la fuente */
   padding: 15px; /* Espaciado interno */
   border: 2px solid; /* Borde */
   border-color: rgb(109, 109, 109);
@@ -194,19 +192,11 @@ nav.right ul.bottom {
 }
 
 .head-nav-icon {
-  font-size: 1.5em
-}
-
-nav.right a {
-  padding: 0 5;
-  background: none; /* Sin fondo */
-  border: none; /* Sin borde */
-  cursor: pointer; /* Cambia el cursor al pasar por encima */
-  color:#333;
+  font-size: 1.5rem
 }
 
 .fa-language {
-  font-size: 2em;
+  font-size: 1.8rem;
   margin-top: 4px
 }
 
@@ -315,7 +305,7 @@ section.header-bottom {
   background-color: rgb(35, 35, 35);
   padding: 8px 8px;
   border-radius: 12px;
-  font-size: 1.02em;
+  font-size: 1rem;
   text-decoration: none;
 }
 
@@ -515,7 +505,7 @@ main {
 }
 
 .category h3 {
-  font-size: 1.rem;
+  font-size: 1.2rem;
   margin-bottom: 10px;
 }
 
@@ -581,7 +571,7 @@ section.all-featured, .recommended {
 
 .all-featured h2, .recommended h2 {
   font-weight: 700;
-  font-size: 2em;
+  font-size: 2rem;
   width: 100%;
   text-align: center;
 }
@@ -609,22 +599,22 @@ article.product {
 
 .rating {
   font-weight: 700;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   color:rgb(215, 162, 0)
 }
 
 .nota {
-  font-size: 0.8em
+  font-size: 0.9rem
 }
 
 .price {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 
 .reviews {
   color: gray;
-  font-size: 0.8em
+  font-size: 0.9rem
 }
 
 /* Sección Nuestras marcas */
@@ -696,13 +686,6 @@ footer {
   flex-grow: 1;
 }
 
-article.right {
-  display: flex;
-  align-items: flex;
-  justify-content: flex-start;
-  padding: 0px;
-}
-
 article.left {
   flex: 1; /* Ocupa un tercio del total */
   display: flex;
@@ -743,7 +726,7 @@ article.text-content {
 
 .right p {
   align-self: last baseline;
-  font-size: 0.7em;
+  font-size: 0.7rem;
 }
 
 .newsletter-register button {
@@ -798,11 +781,11 @@ input[type="text"] {
 }
 
 .payment-section ul li h2 {
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 .payment-section ul li {
-  font-size: 0.9em;
+  font-size: 0.9rem;
   margin-bottom: 15px;;
 }
 
@@ -819,7 +802,7 @@ article.payment-images {
 }
 
 .payment-section-left p {
-  font-size: 0.7em;
+  font-size: 0.7rem;
   width: 75%;
 }
 .payment-section-left {
@@ -864,7 +847,7 @@ article.payment-section-right {
 }
 
 .social-section a {
-  font-size: 0.8em;
+  font-size: 0.8rem;
   text-decoration: none; /* Sin subrayado */
   color: rgb(196, 196, 196)
 }
@@ -882,7 +865,7 @@ article.payment-section-right {
 }
 
 .social-icon {
-  font-size: 2.0em;
+  font-size: 2.0rem;
   color: rgb(255, 255, 255);
   width: auto;
   margin-bottom: 10px;
@@ -930,7 +913,7 @@ section.copyright {
 }
 
 .eslogan {
-  font-size: 0.8em;
+  font-size: 0.8rem;
   font-style: italic;
   font-weight: bold;
 }
@@ -991,7 +974,7 @@ section.copyright {
   }
 
   .payment-section ul li {
-    font-size: 0.9em; /* Ajusta el tamaño del texto */
+    font-size: 0.9rem; /* Ajusta el tamaño del texto */
     margin: 5px 0; /* Espaciado entre elementos */
   }
 
@@ -1098,7 +1081,7 @@ section.copyright {
 
 .category-home h1 {
   width: 100%;
-  font-size: 3em;
+  font-size: 3rem;
   font-weight: 700;
 }
 
@@ -1192,13 +1175,13 @@ main.login div section img {
   width: 100%;
   text-align: center;
   margin-bottom: 30px;
-  font-size: 2.0em;
+  font-size: 2.0rem;
   font-weight: bold;
 }
 
 form h2 {
   text-align: center;
-  font-size: 2em;
+  font-size: 2rem;
   margin-bottom: 30px;
 }
 
@@ -1222,7 +1205,7 @@ form h2 {
 }
 
 .form-group label .icon {
-  font-size: 1.2em;
+  font-size: 1.2rem;
   color: rgb(31, 31, 31)
 }
 
@@ -1266,7 +1249,7 @@ input[type="password"]:focus {
 }
 
 .yet span, .yet a {
-  font-size: 1em;
+  font-size: 0.9rem;
 }
 
 .login-container form a:hover {
@@ -1276,10 +1259,6 @@ input[type="password"]:focus {
 
 main.login div section img:hover {
   transform: none;
-}
-
-.login-container .yet, a {
-  font-size: 0.9em
 }
 
 /* Separador con líneas */
@@ -1298,7 +1277,7 @@ main.login div section img:hover {
 
 .separator li span {
   margin: 0 20px;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   color: #333;
 }
 
@@ -1331,7 +1310,7 @@ main.login div section img:hover {
 
 .social-buttons button {
   padding: 10px 20px;
-  font-size: 1.1em;
+  font-size: 1.1rem;
   width: 100%;
   max-width: 300px;
 }
@@ -1422,7 +1401,7 @@ main.login div section img:hover {
 }
 
 .form-list label .icon {
-  font-size: 1.2em;
+  font-size: 1.2rem;
   color: rgb(31, 31, 31)
 }
 
@@ -1508,6 +1487,10 @@ label[for="price-range"] {
   margin-bottom: 10px;
 }
 
+.manufacturer {
+  margin-top: 25px;
+}
+
 /* Checkbox options */
 .options input[type="checkbox"] {
   margin-right: 10px;
@@ -1576,13 +1559,13 @@ label[for="price-range"] {
 }
 
 .bass-product-info h3 {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 
 .bass-rating {
   font-weight: 700;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   color:rgb(215, 162, 0);
   margin-bottom: 10px;
 }
@@ -1602,12 +1585,12 @@ label[for="price-range"] {
 }
 
 .bass-product-buy h3 {
-  font-size: 1.6em;
+  font-size: 1.6rem;
   font-weight: bold;
 }
 
 .bass-product-buy a {
-  font-size: 1.4em;;
+  font-size: 1.4rem;;
 }
 
 .bass-product ul {
@@ -1631,11 +1614,11 @@ label[for="price-range"] {
   }
 
   .bass-product-info h3 {
-    font-size: 1em; /* Ajusta el tamaño del título */
+    font-size: 1rem; /* Ajusta el tamaño del título */
   }
 
   .bass-rating {
-    font-size: 0.9em; /* Reduce el tamaño de la valoración */
+    font-size: 0.9rem; /* Reduce el tamaño de la valoración */
   }
 
   .bass-product ul {
@@ -1647,7 +1630,7 @@ label[for="price-range"] {
   }
 
   .bass-product-buy h3 {
-    font-size: 1.2em; /* Ajusta el tamaño del precio */
+    font-size: 1.2rem; /* Ajusta el tamaño del precio */
   }
 
   .fav-buy a i {
@@ -1659,7 +1642,7 @@ label[for="price-range"] {
   .bass-product {
     flex-wrap: wrap;
     justify-content: center;
-    font-size: 1.3em;
+    font-size: 1.3rem;
   }
 
   .bass-product-info ul {
@@ -1723,7 +1706,7 @@ label[for="price-range"] {
   align-items: center;
   gap: 10px;
   font-weight: 700;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   color:rgb(215, 162, 0);
 }
 
@@ -1795,7 +1778,7 @@ label[for="price-range"] {
 }
 
 .product-price {
-  font-size: 1.7em;
+  font-size: 1.7rem;
   font-weight: bold;
 }
 
@@ -2200,7 +2183,6 @@ section.recommended {
 .order {
   padding-top: 15px;
   border-top: solid 1px rgb(173, 173, 173);
-  background-color: gra;
 }
 
 .order-top {
