@@ -2139,9 +2139,16 @@ section.recommended {
 /* PÁGINA SEIS */
 /* ------------ */
 
+
 .main-profile-container {
   display: flex;
+  flex-direction: column;
   padding: 50px 10vw;
+  gap: 80px;
+}
+
+.profile-top {
+  display: flex;
   gap: 6%;
 }
 
@@ -2232,7 +2239,7 @@ section.recommended {
   border-radius: 15px;
 }
 
-.order-top button {
+.order-top button, .your-opinion button {
   max-height: 35px;
   padding: 8px 15px; /* Tamaño del botón */
   border: none; /* Sin borde */
@@ -2244,7 +2251,7 @@ section.recommended {
   transition: background-color 0.3s ease; /* Animación suave al pasar el mouse */
 }
 
-.order-top button:hover {
+.order-top button:hover, .your-opinion button:hover {
   background-color: #111111; /* Azul más oscuro */
 }
 
@@ -2278,4 +2285,106 @@ section.recommended {
 .status-delivered {
   color: green;
   font-weight: bold;
+}
+
+.status-canceled {
+  color: rgb(173, 0, 0);
+  font-weight: bold;
+}
+
+.status-ongoing {
+  color: rgb(200, 140, 0);
+  font-weight: bold;
+}
+
+.status-canceled {
+  color: rgb(173, 0, 0);
+  font-weight: bold;
+}
+
+.your-opinion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px 8vw;
+  border: solid 1px lightgray;
+  border-radius: 10px;;
+}
+
+.your-opinion h1 {
+  font-weight: bold;;
+}
+
+.opinion-image {
+  width: 30%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(237, 237, 237);
+  margin-bottom: 15px;
+}
+
+.opinion-stars {
+  font-weight: 700;
+  font-size: 2.0em;
+  margin-bottom: 10px;;
+}
+
+.your-opinion p {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 868px) {
+  .main-profile-container {
+    padding: 30px 5vw; /* Reducir el padding */
+    gap: 40px; /* Reducir el espacio entre secciones */
+  }
+
+  .profile-top {
+    flex-direction: column; /* Cambiar a disposición en columna */
+    gap: 20px; /* Reducir el espacio */
+  }
+
+  .profile-left {
+    gap: 30px;
+  }
+
+  .user-info ul {
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 0.8rem;
+  }
+
+  .profile-menu ul, .profile-newsletter {
+    font-size: 1rem;
+    align-items: center;
+  }
+
+  .profile-menu {
+    margin: 0 auto;
+  }
+
+  .profile-main h1 {
+    font-size: 1.4rem;
+  }
+
+  .profile-main h3 {
+    font-size: 1rem;
+  }
+
+  .your-opinion {
+    padding
+  }
+
+  .your-opinion h1 {
+    font-size: 1.2rem;
+  }
+
+  .opinion-stars {
+    font-size: 1.5rem;
+  }
+
+  .your-opinion {
+    padding: 20px 20px;
+  }
 }
