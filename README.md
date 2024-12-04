@@ -1,100 +1,73 @@
-# Proyecto_LMYSGI_FAM
+## **Análisis de Requisitos y Objetivos del Proyecto**
 
-# Análisis de Requisitos y Objetivos del Proyecto
+### **1. Objetivos de la Aplicación Web**
 
-## 1. Objetivos de la Aplicación Web
+#### **1.1. Objetivo General**  
+El objetivo principal del proyecto es desarrollar una tienda en línea de instrumentos musicales que permita a los usuarios explorar categorías de productos, visualizar detalles específicos y añadir artículos a un carrito de compras. La aplicación estará construida utilizando HTML y CSS para garantizar una organización clara del contenido y un diseño atractivo. Además, se han empleado herramientas como Git, GitHub y Balsamiq para facilitar el desarrollo colaborativo y la planificación visual del proyecto.  
 
-### 1.1. Objetivo General
+#### **1.2. Objetivos Específicos**  
+- **Navegación clara y accesible:** Crear una estructura de navegación intuitiva que permita a los usuarios explorar categorías, subcategorías y detalles de productos sin complicaciones.  
+- **Diseño visual atractivo y funcional:** Utilizar CSS para diseñar un sitio web moderno, limpio y visualmente atractivo, que cumpla con los principios de accesibilidad.  
+- **Optimización para dispositivos móviles:** Implementar diseño responsivo para ofrecer una experiencia de usuario fluida y consistente en computadoras de escritorio, tabletas y móviles.  
+- **Gestión eficiente del proyecto:** Usar Git y GitHub para controlar versiones, trabajar en equipo y documentar el progreso del desarrollo.  
+- **Planificación visual efectiva:** Emplear Balsamiq para prototipar wireframes y garantizar que la estructura y el diseño del sitio estén bien definidos antes de la implementación.  
 
-El objetivo principal es desarrollar una tienda en línea de instrumentos musicales que permita a los usuarios navegar entre categorías de productos, ver detalles de cada uno y agregar artículos a su carrito de compras. Esta tienda debe ser completamente funcional desde el punto de vista visual y estructural, utilizando solo HTML para la organización del contenido y CSS para el diseño y maquetación de la tienda.
+---
 
-### 1.2. Objetivos Específicos
+### **2. Requisitos del Proyecto**
 
-- **Navegación clara entre categorías y productos**: Crear una estructura de navegación sencilla que permita a los usuarios explorar diferentes tipos de instrumentos musicales (guitarras, teclados, baterías, etc.) y acceder a sus subcategorías.
+#### **2.1. Requisitos Funcionales**  
+- Estructura clara de las páginas, incluyendo:  
+  - Página de inicio que destaque las categorías principales.  
+  - Páginas para categorías, subcategorías y productos individuales.  
+  - Carrito de compras para visualizar los productos añadidos.  
+  - Formularios para registro e inicio de sesión del usuario.  
+- Información completa en la página de cada producto: imágenes, precio, descripción y características detalladas.  
+- Navegación funcional entre categorías, subcategorías y productos relacionados.  
 
-- **Diseño atractivo y funcional**: Utilizar CSS para crear un diseño visualmente atractivo, que incluya un layout limpio y moderno, con un enfoque en la accesibilidad y la buena presentación de productos.
+#### **2.2. Requisitos No Funcionales**  
+- **Usabilidad:**  
+  - Interfaz intuitiva y accesible, con diseño limpio y estructurado.  
+  - Tipografía legible y adecuada para una tienda en línea.  
+- **Rendimiento:**  
+  - Optimización de diseño y carga rápida, utilizando imágenes comprimidas y código eficiente.  
+- **Compatibilidad y Responsividad:**  
+  - Diseño responsivo adaptado a diferentes tamaños de pantalla.  
+  - Compatibilidad probada en navegadores principales (Chrome, Firefox, Safari, Edge).  
 
-- **Optimización para diferentes dispositivos**: Implementar un diseño responsivo que permita a los usuarios disfrutar de una experiencia de compra adecuada tanto en computadoras de escritorio como en dispositivos móviles o tabletas.
+---
 
-- **Interactividad básica con el uso de formularios**: Crear formularios de registro, inicio de sesión, y un formulario de contacto sencillo utilizando solo HTML y CSS, sin necesidad de backend ni JavaScript.
+### **3. Tecnologías Utilizadas y Justificación**
 
-## 2. Requisitos del Proyecto
+#### **HTML5**  
+La estructura del sitio web está construida completamente en HTML5 debido a su capacidad para organizar el contenido de manera semántica y accesible. Las etiquetas como `<header>`, `<nav>`, `<section>` y `<article>` permiten que el código sea fácil de leer y entender tanto para los desarrolladores como para los navegadores. Esta elección asegura un desarrollo estructurado, facilitando futuras ampliaciones o integraciones.  
 
-### 2.1. Requisitos Funcionales
+#### **CSS3**  
+Para el diseño visual y la maquetación, se ha utilizado CSS3, que ofrece herramientas avanzadas como flexbox y grid para organizar los elementos de manera eficiente. Estas propiedades permiten crear un diseño limpio, moderno y adaptado a diferentes dispositivos mediante Media Queries. Además, CSS garantiza un control detallado sobre la apariencia de las páginas, permitiendo personalizar tipografías, colores y estilos de manera precisa, lo cual es crucial para lograr un diseño atractivo y profesional.  
 
-#### 2.1.1 Estructura de Páginas
+#### **Git y GitHub**  
+El uso de Git y GitHub ha sido fundamental para gestionar el proyecto de manera eficiente. Git se ha utilizado como herramienta de control de versiones, permitiendo rastrear cambios en el código y revertir errores. GitHub ha servido como una plataforma para alojar el proyecto y documentar el progreso mediante commits. Estas tecnologías no solo mejoran la productividad, sino que aseguran la transparencia y el seguimiento continuo del desarrollo.  
 
-- **Página de Inicio (Home)**: Presentar las categorías de productos (guitarras, teclados, percusión, etc.) de manera destacada, de modo que los usuarios puedan hacer clic en ellas para acceder a las subcategorías o productos específicos. También se incluirán elementos como imágenes destacadas y descripciones breves.
+#### **Balsamiq**  
+Antes de iniciar la implementación, se diseñaron wireframes en Balsamiq para planificar visualmente la estructura y diseño del sitio. Esta herramienta permite prototipar interfaces de usuario de manera rápida, asegurando que todos los elementos esenciales sean considerados desde el inicio. Los wireframes proporcionaron una base sólida para el desarrollo y ayudaron a garantizar que el diseño cumpliera con las expectativas del usuario y los objetivos del proyecto.  
 
-- **Página de Categoría de Instrumentos**: Dentro de cada categoría (por ejemplo, "Guitarras y Bajos"), mostrar productos organizados de manera estructurada. Cada producto tendrá su imagen, nombre y un enlace al detalle del producto.
+---
 
-- **Página de Subcategoría (por ejemplo, "Guitarras Eléctricas")**: Mostrar productos dentro de una subcategoría específica (como guitarras eléctricas), con imágenes de productos y una breve descripción.
+### **4. Desarrollo del Proyecto y Estructura de Páginas**
 
-- **Página de Producto**: Mostrar información detallada de cada producto, incluyendo imágenes, precio, descripción y especificaciones. El diseño debe ser atractivo y permitir a los usuarios ver detalles completos de cada artículo.
+El sitio web se compone de las siguientes páginas clave:  
 
-- **Carrito de Compras**: Visualizar los productos que un usuario ha añadido al carrito. Los usuarios deben poder ver una lista de productos, cantidades y un resumen de precios. Aunque no se implementará la funcionalidad dinámica, el diseño del carrito debe ser claro y estructurado.
+- **Página de Inicio:** Ofrece una vista general de las categorías de productos con imágenes representativas. Cada categoría tiene un enlace a sus respectivas subcategorías.  
+- **Páginas de Categorías y Subcategorías:** Organizan los productos de forma jerárquica, mostrando imágenes, descripciones breves y enlaces para acceder a los detalles.  
+- **Página de Producto:** Presenta información detallada, como imágenes, precio, descripción y características.  
+- **Carrito de Compras:** Muestra los artículos añadidos con un resumen de precios y cantidades.  
+- **Página de Perfil de Usuario:** Visualiza los datos del usuario registrado.  
+- **Páginas de Registro e Inicio de Sesión:** Incluyen formularios HTML diseñados para capturar información del usuario.  
 
-- **Página de Perfil de Usuario**: Permitir a los usuarios registrados ver y actualizar su perfil (aunque la actualización no se implementará en esta fase). Debería mostrar detalles como el nombre, dirección y historial de compras.
+---
 
-- **Inicio de Sesión y Registro**: Crear formularios para que los usuarios puedan registrarse o iniciar sesión. Aunque no habrá funcionalidad de backend, se puede crear la estructura de los formularios utilizando HTML.
+### **5. Conclusión**
 
-### 2.2. Requisitos No Funcionales
+El desarrollo de este proyecto de tienda en línea ha priorizado el uso de tecnologías sólidas y bien establecidas, como HTML5 y CSS3, para garantizar una experiencia de usuario fluida y una estructura funcional. La incorporación de herramientas como Git, GitHub y Balsamiq permitió planificar y gestionar el proyecto de manera eficiente.  
 
-- **Usabilidad**
-
-  - **Interfaz intuitiva**: Se utilizarán principios de diseño sencillo y limpio, con una estructura clara y fácil de navegar. Los usuarios deben ser capaces de encontrar rápidamente lo que buscan, ya sea una categoría de producto o el proceso de registro.
-
-  - **Estilos de texto claros**: La tipografía debe ser legible y adecuada para una tienda en línea (por ejemplo, con títulos destacados y descripciones legibles).
-
-- **Rendimiento**
-
-  - **Optimización del diseño**: Aunque no se implementará JavaScript para interacciones, se asegurará que las páginas se carguen rápidamente, utilizando imágenes optimizadas y un diseño sencillo que permita una carga ágil.
-
-- **Responsividad y compatibilidad**
-
-  - **Diseño responsivo**: Usando CSS Media Queries, se garantizará que la tienda sea accesible y funcional en diferentes tamaños de pantalla, desde computadoras de escritorio hasta dispositivos móviles.
-
-  - **Compatibilidad de navegadores**: El sitio se probará en los principales navegadores (Chrome, Firefox, Safari, Edge) para asegurar que el diseño sea consistente y funcione correctamente.
-
-## 3. Tecnologías Utilizadas
-
-### 3.1. Frontend
-
-- **HTML5**: Se utilizará HTML5 para estructurar el contenido de la tienda en línea, aplicando etiquetas semánticas que faciliten la organización de las categorías, productos, formularios de inicio de sesión y registros, y demás secciones. Utilizaremos listas, enlaces, tablas (para el carrito de compras), y formularios (para inicio de sesión y registro).
-
-- **CSS3**: CSS3 se utilizará para dar estilo a las páginas. Esto incluirá:
-
-  - **Layout y disposición**: Usando propiedades como flexbox o grid para organizar productos en categorías y subcategorías.
-  
-  - **Estilos visuales**: Se aplicarán estilos a los productos, botones, formularios y enlaces para hacer que la tienda sea visualmente atractiva.
-  
-  - **Diseño responsivo**: A través de media queries, se adaptará el diseño para que funcione en dispositivos de escritorio, tabletas y móviles.
-
-## 4. Estructura de Páginas
-
-### 4.1. Páginas y Estructura HTML
-
-- **Página de Inicio (Home) - `index.html`**
-
-  - Listado de categorías de productos (Guitarras, Percusión, Teclados, etc.).
-  - Diseño limpio con imágenes grandes representativas de cada categoría.
-  - Enlaces a cada categoría para su visualización detallada.
-
-- **Página de Categoría de Instrumentos - `categoria_guitarras_bajos.html`**
-
-  - Muestra productos dentro de la categoría de guitarras y bajos.
-  - Imágenes de los productos, nombre, descripción breve, enlace al detalle del producto.
-
-- **Página de Subcategoría - `categoria_guitarras_electricas.html`**: Muestra solo productos de guitarras eléctricas.
-
-- **Página de Producto - `producto.html`**: Detalles completos del producto seleccionado (imagen, precio, descripción, características).
-
-- **Carrito de Compras - `carrito.html`**: Listado de productos añadidos al carrito con resumen de precios.
-
-- **Página de Perfil de Usuario - `perfil.html`**: Muestra datos del usuario.
-
-- **Páginas de Inicio de Sesión y Registro - `login.html`, `registro.html`**: Formularios con campos para ingresar datos de usuario (sin backend, solo el diseño).
-
-## 5. Conclusión
-
-Este proyecto de tienda en línea se centrará en la creación de una estructura visualmente atractiva y funcional mediante HTML y CSS. Aunque no se implementarán interacciones dinámicas ni backend, se crearán páginas y formularios con una disposición intuitiva y fácil de usar. El diseño será responsivo, adaptándose a diversos dispositivos, y se seguirá un esquema de maquetación basado en principios de accesibilidad y usabilidad.
+La implementación de un diseño responsivo asegura que el sitio sea accesible en una amplia variedad de dispositivos, mientras que el enfoque en la validación y optimización del código asegura que el proyecto cumpla con los estándares modernos de desarrollo web. Este proyecto no solo cumple con los requisitos funcionales y no funcionales establecidos, sino que también sienta una base sólida para futuras mejoras, como la integración de backend o funcionalidades dinámicas.  
