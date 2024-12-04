@@ -48,6 +48,21 @@ a {
   display: none;
 }
 
+button {
+  padding: 8px 15px;
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  background-color: #676767; /* Color azul */
+  color: white; /* Texto blanco */
+  font-size: 1rem; /* Tamaño de texto */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  transition: background-color 0.3s ease; /* Animación suave al pasar el mouse */
+}
+
+button:hover {
+  background-color: #111111; /* Azul más oscuro */
+}
+
 /* --------------------- */
 /* Stickyness del Header */
 /* --------------------- */
@@ -733,7 +748,6 @@ article.text-content {
 
 .newsletter-register button {
   width: 33%;
-  background-color: rgb(39, 39, 39);
 }
 
 article.newsletter-register {
@@ -766,19 +780,6 @@ input[type="text"] {
   padding: 10px; /* Espaciado interno del input */
   border: 1px solid #ccc; /* Borde del input */
   border-radius: 5px; /* Bordes redondeados */
-  border-color: gr;
-}
-
-button {
-  padding: 10px; /* Espaciado interno del botón */
-  color: white; /* Color del texto del botón */
-  border: none; /* Sin borde */
-  border-radius: 5px; /* Bordes redondeados */
-  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-}
-
-button:hover {
-  background-color: #000000; /* Color de fondo del botón al pasar el mouse */
 }
 
 /* Segunda sección */
@@ -1244,12 +1245,6 @@ input[type="password"]:focus {
   max-width: 200px;
   margin-top: 20px;
   padding: 10px;
-  background-color: #2e2e2e;
-  color: white;
-  font-size: 1rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
   width: 50%; /* Ajusta el ancho del botón */
 }
 
@@ -1335,13 +1330,8 @@ main.login div section img:hover {
 }
 
 .social-buttons button {
-  background-color: #232323;
-  color: white;
   padding: 10px 20px;
-  border-radius: 5px;
   font-size: 1.1em;
-  border: none;
-  cursor: pointer;
   width: 100%;
   max-width: 300px;
 }
@@ -1841,18 +1831,6 @@ label[for="price-range"] {
 /* Estilo del botón */
 .quantity-container button {
   padding: 8px 15px; /* Tamaño del botón */
-  border: none; /* Sin borde */
-  border-radius: 5px; /* Bordes redondeados */
-  background-color: #676767; /* Color azul */
-  color: white; /* Texto blanco */
-  font-size: 1rem; /* Tamaño de texto */
-  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-  transition: background-color 0.3s ease; /* Animación suave al pasar el mouse */
-}
-
-/* Cambio de color del botón al pasar el mouse */
-.quantity-container button:hover {
-  background-color: #111111; /* Azul más oscuro */
 }
 
 .product-description {
@@ -2034,6 +2012,7 @@ label[for="price-range"] {
 }
 
 .cart-payment button {
+  padding: 8px 15px;
   background-color: #444444;
   width: 150px;
   font-size: 1.2rem;
@@ -2241,18 +2220,6 @@ section.recommended {
 
 .order-top button, .your-opinion button {
   max-height: 35px;
-  padding: 8px 15px; /* Tamaño del botón */
-  border: none; /* Sin borde */
-  border-radius: 5px; /* Bordes redondeados */
-  background-color: #676767; /* Color azul */
-  color: white; /* Texto blanco */
-  font-size: 1rem; /* Tamaño de texto */
-  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-  transition: background-color 0.3s ease; /* Animación suave al pasar el mouse */
-}
-
-.order-top button:hover, .your-opinion button:hover {
-  background-color: #111111; /* Azul más oscuro */
 }
 
 .order-bottom ul {
@@ -2370,10 +2337,6 @@ section.recommended {
 
   .profile-main h3 {
     font-size: 1rem;
-  }
-
-  .your-opinion {
-    padding
   }
 
   .your-opinion h1 {
